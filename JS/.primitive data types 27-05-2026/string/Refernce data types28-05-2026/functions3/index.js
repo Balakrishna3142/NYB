@@ -18,3 +18,10 @@ function salary(name,days){
     console.log(salary("naresh",21))
     console.log(salary("balakrishna",20))
 console.log("All the salaries are printed")
+
+
+//it is a block of code some task and return some value
+hello()
+function add(a,b){
+    console.log(a+b)
+}
