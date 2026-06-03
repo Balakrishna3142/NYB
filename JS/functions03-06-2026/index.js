@@ -1,4 +1,4 @@
-//functions 
+//functions //function declaration 
 function add (a,b){
 
     console.log (a+b)
@@ -31,3 +31,38 @@ function hello (a=10,b=10){
     }
 
  varying( undefined,2,3,4,5,6,7,8,9,10)
+
+//function expression 3 typs 
+// named function
+//anonymous function
+//arrow function
+
+//1.named function
+let a=function hello(){
+    console.log("hii")
+}
+
+ a()
+
+ //2.anonymous function 
+ let mul =function(a,b){
+    return a*b
+ }
+console.log(mul(5,4))
+
+//arrow function
+const sub=(a,b)=>{
+    return a-b
+}
+console.log(sub(20,5))
+
+//Recursive Functions
+function num(n){
+    if (n>5){
+        return
+
+    }
+    console.log(n)
+    num(n+1)
+}
+num(1)
