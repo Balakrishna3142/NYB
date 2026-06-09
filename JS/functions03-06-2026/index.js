@@ -66,3 +66,54 @@ function num(n){
     num(n+1)
 }
 num(1)
+
+//Diference between VAR,LET,&CONST
+
+//                     var,    let,  const
+//var is a function scope 
+//y var is a function scope:- it designed to belong to the entire function, not individual blocks(if,for,while)
+//let is a block scope
+//y let is a blocked scope:-A block is a group of statements enclosed within curly braces {},
+// that creates its own scope for variables declared with let and const.
+var af=3
+console.log(af)
+var af=5
+console.log(af)
+af=9
+console.log(af) //we can re assing in the value
+
+let bc=3 // we shoud not give some varible name
+console.log(bc)
+bc=5
+console.log(bc)//we can re assigin the value 
+
+const cd=5
+console.log(cd)// we can not the change the value of a varible in const
+// cd=7
+ //console.log(cd)
+
+ //Hostig
+ //js code excuite in a 2 phases
+ // memory creation
+ //code excuite
+ console.log(b)
+ var b=10
+ console.log(b)
+
+
+ //hoisting initialization var
+ var text=20
+ console.log(text)
+ console.log(d)//initialized with undefined
+ var d=10
+ //let initialization
+ let f=30
+ console.log(f)
+// before initialization 
+//  console.log(w)
+//  let w=5;
+//const initialization 
+const v=40
+console.log(v)
+console.log(h)
+const h=80
