@@ -44,3 +44,19 @@ console.log(arr)
 //splice
 arr.splice(1,1)
 console.log(arr)
+
+//indexoff
+let num =[100,1,2,3,4]
+console.log(num)
+console.log(num[2])
+console.log(num.indexOf(0))
+
+//includes
+console.log(num)
+console.log(num[2])
+console.log(num.includes(0))
+console.log(num.includes(3))
+
+//splice
+num1.splice(0,arr.length)
+console.log(num1)
