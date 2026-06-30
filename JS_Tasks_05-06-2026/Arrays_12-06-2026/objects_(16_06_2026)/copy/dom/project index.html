@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+
+    <h1 id="heading">Welcome to DOM</h1>
+    <p id="paragraph">This is the original text.</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+        // Select elements
+        const heading = document.getElementById("heading");
+        const paragraph = document.getElementById("paragraph");
+        const button = document.getElementById("btn");
+
+        // Add click event
+        button.addEventListener("click", function() {
+            // Change text
+            heading.textContent = "DOM  Successful!";
+
+            // Change paragraph content
+            paragraph.textContent = "The text has been updated using.";
+
+            // Change style
+            heading.style.color = "yellow";
+            paragraph.style.fontSize = "20px";
+        });
+    </script>
+
+</body>
+</html>

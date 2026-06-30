@@ -1,3 +1,4 @@
+//Array search operations
 //indexoff
 let num =[100,1,2,3,4]
 console.log(num)

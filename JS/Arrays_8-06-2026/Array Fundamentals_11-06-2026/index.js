@@ -48,3 +48,7 @@ console.log(arr)
 //Add elements at any position using splice().
 arr.splice(2,0,"hello")
 console.log(arr)
+
+
+var arr=[1,2,3,4]
+console.log(arr)
