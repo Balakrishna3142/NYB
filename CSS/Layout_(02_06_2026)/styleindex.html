@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <link rel="stylesheet" href="./styleindex.css">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    aside {
+      background: #f4f4f4;
+      width: 250px;
+      padding: 20px;
+    }
+
+    main {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Sidebar</h2>
+      <p>Navigation links go here.</p>
+    </aside>
+
+    <main>
+      <h2>Main Content</h2>
+      <p>This area grows to fill the remaining space.</p>
+    </main>
+  </div>
+
+  <footer>
+    © 2026 My Website
+  </footer>
+
+</body>
+</html>
