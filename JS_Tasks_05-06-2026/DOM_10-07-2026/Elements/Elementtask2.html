@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn">Create Paragraph</button>
+
+<div id="container"></div>
+<button id="add">Add Item</button>
+<button id="remove">Remove Last Item</button>
+
+<ul id="list"></ul>
+<ul id="list">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+</ul>
+<script>
+
+
+
+const btn = document.getElementById("btn");
+const container = document.getElementById("container");
+
+btn.addEventListener("click", () => {
+
+    const p = document.createElement("p");
+
+    p.textContent = "This paragraph was created dynamically.";
+
+    container.appendChild(p);
+
+})
+
+//Add Elements
+const add = document.getElementById("add");
+const list = document.getElementById("list");
+
+add.addEventListener("click", () => {
+
+    const li = document.createElement("li");
+
+    li.textContent = "JavaScript";
+
+    list.appendChild(li);
+
+})
+
+</script>
+
+</body>
+</html>

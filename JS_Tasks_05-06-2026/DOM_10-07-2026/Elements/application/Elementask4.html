@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> List</h2>
+
+<input
+type="text"
+id="task"
+placeholder="Enter task">
+
+<button id="addBtn">
+Add
+</button>
+
+<ul id="list"></ul>
+
+<script>
+
+const taskInput = document.getElementById("task");
+const addBtn = document.getElementById("addBtn");
+const list = document.getElementById("list");
+
+addBtn.addEventListener("click", () => {
+
+    if(taskInput.value === "")
+    {
+        alert("Enter a task");
+        return;
+    }
+
+    const li = document.createElement("li");
+
+    li.textContent = taskInput.value;
+
+    const removeBtn = document.createElement("button");
+
+    removeBtn.textContent = "Delete";
+
+    removeBtn.addEventListener("click", () => {
+
+        li.remove();
+
+    });
+
+    li.appendChild(removeBtn);
+
+    list.appendChild(li);
+
+    taskInput.value = "";
+
+})
+</script>
+
+</body>
+</html>

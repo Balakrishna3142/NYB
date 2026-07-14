@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="item">
+<button id="addBtn">Add Item</button>
+
+<ul id="list"></ul>
+
+<script>
+
+let list=document.getElementById("list");
+
+document.getElementById("addBtn").addEventListener("click",function(){
+
+let value=document.getElementById("item").value;
+
+if(value==="") return;
+
+let li=document.createElement("li");
+li.textContent=value;
+
+list.appendChild(li);
+
+document.getElementById("item").value="";
+
+});
+
+list.addEventListener("click",function(event){
+
+if(event.target.tagName==="LI"){
+alert("You clicked : "+event.target.textContent);
+}
+
+});
+
+</script>
+
+</body>
+</html>

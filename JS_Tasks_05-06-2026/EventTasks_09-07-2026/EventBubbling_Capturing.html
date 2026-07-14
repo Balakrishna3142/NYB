@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent" style="padding:40px;background:skyblue;">
+    Parent
+    <button id="btn">Click Me</button>
+</div>
+
+<script>
+
+let parent=document.getElementById("parent");
+let btn=document.getElementById("btn");
+
+// Capturing
+parent.addEventListener("click",()=>{
+    console.log("Parent Capture");
+},true);
+
+// Bubbling
+parent.addEventListener("click",()=>{
+    console.log("Parent Bubble");
+});
+
+// Target
+btn.addEventListener("click",()=>{
+    console.log("Button Click");
+});
+
+</script>
+
+</body>
+</html>

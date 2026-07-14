@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="box">
+
+<script>
+
+// Normal Event
+document.getElementById("box").addEventListener("input", function(){
+    console.log("Normal:", this.value);
+});
+
+// Debounce
+function debounce(fn, delay){
+    let timer;
+
+    return function(){
+        clearTimeout(timer);
+        timer = setTimeout(fn, delay);
+    }
+}
+
+document.getElementById("box").addEventListener("input",
+debounce(function(){
+    console.log("Debounced");
+},1000));
+
+</script>
+
+</body>
+</html>

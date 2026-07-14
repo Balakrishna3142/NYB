@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Bubbling</title>
+    <style>
+        div {
+            padding: 30px;
+            border: 2px solid black;
+        }
+
+        #parent {
+            background: lightblue;
+        }
+
+        #child {
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+<div id="parent">
+    Parent
+    <div id="child">
+        Child
+    </div>
+</div>
+
+<script>
+document.getElementById("parent").addEventListener("click", function () {
+    console.log("Parent Clicked");
+});
+
+document.getElementById("child").addEventListener("click", function () {
+    console.log("Child Clicked");
+});
+</script>
+
+</body>
+</html>

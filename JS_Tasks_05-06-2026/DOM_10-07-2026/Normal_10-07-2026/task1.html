@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- click event -->      
+<button id="btn">Click Me</button>
+<!-- change -->
+<select id="course">
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JavaScript</option>
+</select>
+<!-- submit -->
+ <form id="myForm">
+    <input type="text" placeholder="Enter Name">
+    <button type="submit">Submit</button>
+</form>
+<!-- input event -->
+ <input type="text" id="username" placeholder="Type here">
+
+<p id="output"></p>
+
+<script>
+    // click
+document.getElementById("btn").addEventListener("click", function () {
+    alert("Button Clicked!");
+});
+
+// change
+document.getElementById("course").addEventListener("change", function () {
+    alert("Selected: " + this.value);
+});
+// submit
+document.getElementById("myForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Form Submitted!");
+});
+//input event
+document.getElementById("username").addEventListener("input", function(){
+    document.getElementById("output").innerText = this.value;
+});
+
+</script>
+
+</body>
+</html>

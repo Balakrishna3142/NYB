@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="search" placeholder="Search">
+
+<script>
+
+function debounce(fn, delay){
+
+let timer;
+
+return function(){
+
+clearTimeout(timer);
+
+timer = setTimeout(fn, delay);
+
+};
+
+}
+
+document.getElementById("search").addEventListener("input",
+debounce(function(){
+
+console.log("Searching...");
+
+},500));
+
+</script>
+
+</body>
+</html>

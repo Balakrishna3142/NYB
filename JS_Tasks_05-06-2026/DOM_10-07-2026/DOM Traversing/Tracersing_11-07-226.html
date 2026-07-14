@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent">
+    <h2>cyber sequrity</h2>
+
+    <ul id="list">
+        <li>ping federate</li>
+        <li id="ping access">ping access</li>
+        <li>MFA</li>
+    </ul>
+</div>
+
+<script>
+
+const pingaccess = document.getElementById("ping access")
+
+// Parent
+console.log("Parent:")
+console.log(pingaccess.parentElement)
+
+// Children
+const list = document.getElementById("list")
+
+console.log("Children:")
+console.log(list.children)
+
+// First Child
+console.log(list.firstElementChild)
+
+// Last Child
+console.log(list.lastElementChild)
+
+// Previous Sibling
+console.log(pingaccess.previousElementSibling)
+
+// Next Sibling
+console.log(pingaccess.nextElementSibling)
+
+</script>
+<script src="./Traversing_11-07-2026.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<body>
+
+<button id="cancel">Cancel Timeout</button>
+
+<button id="stop">Stop</button>
+
+<script>
+
+const timer = setTimeout(() => {
+
+    alert("Executed!");
+
+}, 5000);
+
+document.getElementById("cancel").addEventListener("click", () => {
+
+    clearTimeout(timer);
+
+    alert("Timeout Cancelled");
+
+});
+
+const interval = setInterval(() => {
+
+    console.log("Running...");
+
+}, 1000);
+
+document.getElementById("stop").addEventListener("click", () => {
+
+    clearInterval(interval);
+
+    console.log("Stopped");
+
+});
+
+
+</script>
+
+</body>
+</html>
+</body>
+</html>

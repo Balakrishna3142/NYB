@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body style="height:2000px">
+
+<h2>Scroll the page</h2>
+
+<script>
+
+function throttle(fn, delay){
+
+let lastCall = 0;
+
+return function(){
+
+let now = Date.now();
+
+if(now - lastCall >= delay){
+lastCall = now;
+fn();
+}
+
+};
+
+}
+
+window.addEventListener("scroll",
+throttle(function(){
+console.log("Scroll Event");
+},2000));
+
+</script>
+
+</body>
+</html>

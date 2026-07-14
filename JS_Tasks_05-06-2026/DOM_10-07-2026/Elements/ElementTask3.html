@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!----Event Listener (Button Click)-->
+
+    <button id="btn">Click Me</button>
+
+
+    <input type="text" id="name">
+
+<p id="output"></p>
+<div id="box"
+style="
+width:150px;
+height:150px;
+background:skyblue;
+">
+</div>
+<script>
+
+     <!---Event Listener Input Event-->
+
+const input = document.getElementById("name");
+const output = document.getElementById("output");
+
+input.addEventListener("input", () => {
+
+    output.textContent = input.value;
+
+});
+
+
+document.getElementById("btn").addEventListener("click", () => {
+
+    alert("Button Clicked!");
+
+});
+
+const box = document.getElementById("box");
+
+box.addEventListener("mouseover", () => {
+
+    box.style.background = "red";
+
+});
+
+box.addEventListener("mouseout", () => {
+
+    box.style.background = "skyblue";
+
+});
+
+</script>
+</body>
+</html>
