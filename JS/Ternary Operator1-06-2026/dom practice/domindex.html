@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+
+      <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <script>
+        
+        let para = document.createElement("p");
+
+        
+        para.textContent = "This paragraph was created dynamically!";
+
+        
+        para.className = "dynamic-text";
+
+
+        document.getElementById("container").appendChild(para);
+    </script>
+
+    <div id="container">
+    <h2>Student List</h2>
+    <ul id="students">
+        <li>balakrishna</li>
+        <li>pavan</li>
+        <li>naresh</li>
+    </ul>
+</div>
+
+
+    <h1 id="heading">dom</h1>
+    <h4 id="text">document object model</h4>
+
+<div id="box">Hello</div>
+
+<script>
+const box = document.getElementById("box");
+
+
+box.innerHTML = "<b>Welcome</b>";
+</script>
+
+    <script src="./domindex.js"></script>
+</body>
+</html>
