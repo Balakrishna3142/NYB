@@ -1,0 +1,42 @@
+/*layout 2 -->flex gride -->
+direction main axis                  cross axis
+row          left-->right           top-->bottom
+
+colum       top-->bottom           left->right
+
+
+/*Block Elements*/
+/*display: block*/
+
+
+
+.block{
+    display:block;
+    background-color:lightblue;
+    margin:10px;
+    padding:10px;
+}
+
+
+/*Inline Elements (display: inline)*/
+.inline{
+    display:inline;
+    background-color:yellow;
+    padding:5px;
+}
+
+/*Inline-Block (display: inline-block)*/
+.box{
+    display:inline-block;
+    width:100px;
+    height:100px;
+    background-color:orange;
+    margin:10px;
+    text-align:center;
+    line-height:100px;
+}
+
+/*None (display: none)*/
+.hide{
+    display:none;
+}

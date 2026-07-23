@@ -1,7 +1,8 @@
-import Child1 from "./Child1";
+
+import Child5 from "./Child5";
 
 function Child({ message }) {
-  return <Child1 message={message} />;
+  return <Child5 message={message} />;
 }
 
 export default Child;

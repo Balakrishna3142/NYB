@@ -1,0 +1,95 @@
+/*Padding and Margin Values*/
+
+.box1{
+    padding:10px;
+    margin:20px;
+    background:lightgreen;
+}
+
+.box2{
+    padding:30px;
+    margin:40px;
+    background:lightyellow;
+}
+/*content-box and border-box*/
+
+.box1{
+    width:200px;
+    padding:20px;
+    border:5px solid black;
+
+    box-sizing:content-box;
+}
+
+.box2{
+    width:200px;
+    padding:20px;
+    border:5px solid black;
+
+    box-sizing:border-box;
+}
+/*Widths, and Colors*/
+/*Solid Border*/
+
+.box1{
+    border:3px solid red;
+}
+/*Dashed Border*/
+.box2{
+    border:4px dashed blue;
+}
+
+/*Dotted Border*/
+.box3{
+    border:5px dotted green;
+}
+
+/*Double Border*/
+.box4{
+    border:6px double black;
+}
+
+/*Groove Border*/
+.box5{
+    border:6px groove purple;
+}
+
+/*Margin Collapse*/
+.box1{
+    margin-bottom:40px;
+    background:lightblue;
+}
+
+.box2{
+    margin-top:20px;
+    background:lightgreen;
+}
+
+
+/*Overflow: Visible*/
+.box{
+    width:200px;
+    height:80px;
+    overflow:visible;
+}
+
+/*Overflow: Hidden*/
+.box{
+    width:200px;
+    height:80px;
+    overflow:hidden;
+}
+
+/*Overflow: Scroll*/
+.box{
+    width:200px;
+    height:80px;
+    overflow:scroll;
+}
+
+/*Overflow: Auto*/
+.box{
+    width:200px;
+    height:80px;
+    overflow:auto;
+}

@@ -1,0 +1,69 @@
+/*tatic Position*/
+.static{
+    position:static;
+    background:lightgreen;
+}
+
+/*relative position*/
+
+.relative{
+    position:relative;
+    left:50px;
+    top:20px;
+    background:skyblue;
+}
+
+/*Absolute Position*/
+
+/*Positioned relative to nearest positioned parent.*/
+
+.parent{
+    position:relative;
+    width:300px;
+    height:200px;
+    border:2px solid black;
+}
+
+.absolute{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:red;
+    color:white;
+    padding:10px;
+}
+
+
+/*Fixed Position*/
+.fixed{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:black;
+    color:white;
+    padding:10px;
+}
+
+/*Sticky Position*/
+.sticky{
+    position:sticky;
+    top:0;
+    background:orange;
+    padding:10px;
+}
+
+/*Float and Clear Layouts*/
+
+.left{
+    float:left;
+    width:30%;
+    background:lightblue;
+    height:200px;
+}
+
+.right{
+    float:right;
+    width:68%;
+    background:lightgreen;
+    height:200px;
+}

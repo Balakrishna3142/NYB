@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+       <link rel="stylesheet" href="./Selectors.css">
+</head>
+<body>
+      <h1>CSS Selectors Demonstration</h1>
+
+    <!-- Universal Selector -->
+    <h2>1. Universal Selector (*)</h2>
+    <p>Applies the font style to all elements.</p>
+
+    <!-- Element Selector -->
+    <h2>2. Element Selector (h2)</h2>
+    <p>All h2 headings are displayed in blue.</p>
+
+    <!-- Class Selector -->
+    <h2>3. Class Selector (.highlight)</h2>
+    <p class="highlight">This paragraph uses the highlight class.</p>
+
+    <!-- ID Selector -->
+    <h2>4. ID Selector (#special)</h2>
+    <p id="special">This paragraph uses the special ID.</p>
+
+    <!-- Group Selector -->
+    <h2>5. Group Selector (h3, p)</h2>
+    <h3>This is an H3 heading.</h3>
+    <p>This paragraph shares the same style as the H3 heading.</p>
+
+    <!-- Descendant Selector -->
+    <h2>6. Descendant Selector (.container p)</h2>
+    <div class="container">
+        <p>This paragraph is inside the container.</p>
+        <div>
+            <p>This nested paragraph is also inside the container.</p>
+        </div>
+    </div>
+
+    <!-- Child Selector -->
+    <h2>7. Child Selector (.parent > p)</h2>
+    <div class="parent">
+        <p>This is a direct child paragraph.</p>
+        <div>
+            <p>This paragraph is not a direct child.</p>
+        </div>
+    </div>
+
+    <!-- Adjacent Sibling Selector -->
+    <h2>8. Adjacent Sibling Selector (h4 + p)</h2>
+    <h4>Heading 4</h4>
+    <p>This paragraph comes immediately after h4.</p>
+    <p>This paragraph is not selected.</p>
+
+    <!-- General Sibling Selector -->
+    <h2>9. General Sibling Selector (h5 ~ p)</h2>
+    <h5>Heading 5</h5>
+    <p>First sibling paragraph.</p>
+    <div>This is a div element.</div>
+    <p>Second sibling paragraph.</p>
+    <p>Third sibling paragraph.</p>
+
+</body>
+</html>
