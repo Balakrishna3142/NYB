@@ -1,6 +1,6 @@
 
 
-function Child(props) {
+function Child8(props) {
   return (
     <>
       <h2>Name: {props.name}</h2>
@@ -10,4 +10,4 @@ function Child(props) {
   );
 }
 
-export default Child
+export default Child8

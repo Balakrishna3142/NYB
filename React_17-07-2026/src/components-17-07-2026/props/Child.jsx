@@ -1,8 +1,11 @@
+import Child11 from "./Child11";
 
-import Child5 from "./Child5";
-
-function Child({ message }) {
-  return <Child5 message={message} />;
+function Child() {
+  return (
+    <div>
+      <Child11 message="Hello from App!" />
+    </div>
+  );
 }
 
 export default Child;

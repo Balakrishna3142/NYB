@@ -1,10 +1,10 @@
-import Child from "./Child";
+import Child8 from "./Child8";
 
 
 function Parent() {
   return (
     <>
-      <Child
+      <Child8
         name="Rahul"
         age={21}
         course="React"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Child4 from "./Child4";
+import Child5 from "./Child5";
 
 function Child3({ value }) {
   console.log(value);
@@ -11,7 +11,7 @@ function Child3({ value }) {
       <h3>Child3 Component: {A}</h3>
       <p>Value received from Child2: {value}</p>
 
-      <Child4 value={value} />
+      <Child5 value={value} />
     </div>
   );
 }
