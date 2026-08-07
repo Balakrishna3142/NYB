@@ -1,3 +1,1 @@
-export function increment(){
-    
-}
+export { increment, decrement, reset } from "./redux/counterSlice";
