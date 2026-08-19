@@ -1,0 +1,12 @@
+import React from 'react'
+import App from '../../components-17-07-2026/Query Parameters-18-08-2026/App'
+
+function QueryPage() {
+  return (
+    <div>
+        <App/>
+    </div>
+  )
+}
+
+export default QueryPage

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-function ErrorMessage( { Message,OnRetry }){
+function ErrorMessage({ message, onRetry }) {
   return (
-    <div>
-          style={{
+    <div
+      style={{
         padding: "20px",
         background: "#ffe6e6",
         color: "#b00020",
@@ -11,7 +11,9 @@ function ErrorMessage( { Message,OnRetry }){
         textAlign: "center",
         marginTop: "20px",
       }}
+    >
       <h3>Something went wrong</h3>
+
       <p>{message}</p>
 
       {onRetry && (
@@ -19,9 +21,8 @@ function ErrorMessage( { Message,OnRetry }){
           Retry
         </button>
       )}
-
     </div>
-  )
+  );
 }
 
-export default ErrorMessage
+export default ErrorMessage;

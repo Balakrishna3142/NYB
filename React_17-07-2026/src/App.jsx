@@ -83,6 +83,48 @@ import MapPage from './pages/Mapmethod-12-08-2026/MapPage'
 import NormalPage from './pages/Normal Component-12-08-2026/NormalPage'
 import ShallowPage from './pages/Shallow Comparison-12-08-2026/ShallowPage'
 import PracticalPage from './pages/Practical-12-08-2026/PracticalPage'
+import ReactPage from './pages/React Fragments-13-08-2026/ReactPage'
+import ExamlPage from './pages/ReactExampl-13-08-2026/ExamlPage'
+import UsingPage from './pages/UsingFragmentshorthand/UsingPage'
+import AvoidingPage from './pages/Avoiding Unnecessary/AvoidingPage'
+//port CustomPage from './pages/Custom Hook-13-08-2026/CustomPage'
+import ReusaPage from './pages/ReusCustom Hooks-13-08-2026/ReusaPage'
+import CustomPage from './pages/ReusableCustom Hook-13-08-2026/CustomPage'
+import ApiCallsPage from './pages/Custom Hook for API Calls-13-08-2026/ApiCallsPage'
+import ReuseCustomPage from './pages/Reuse Custom Hooks-13-08-2026/ReuseCustomPage'
+import PurePage from './pages/Pure Components-13-08-2026/PurePage'
+import MemoPage from './pages/UseMemo-15-08-2026/MemoPage'
+import CallbackPage from './pages/useCallback-15-08-2026/CallbackPage'
+import ListPage from './pages/List Rendering-16-08-2026/ListPage'
+import DestructuringPage from './pages/Destructuring-16-08-2026/DestructuringPage'
+import LazyPage from './pages/Lazy Loading-16-08-2026/LazyPage'
+import BrowserPage from './pages/Browser Routing-16-082026/BrowserPage'
+import NestedPage from './pages/Nested Routing-16-08-2026/NestedPage'
+import DynamicPage from './pages/Dynamic Routing-16-08-2026/DynamicPage'
+import ParametersPage from './pages/Route Parameters-16-08-2026/ParametersPage'
+import NavigationPage from './pages/Navigation-16-08-2026/NavigationPage'
+import RoutePage from './pages/Protected Routes-16-08-2026/RoutePage'
+import FoundPage from './pages/404 (Not Found) Page-16-08-2026/FoundPage'
+import PracticePage from './pages/Mini Practice3-16-08-2026/PracticePage'
+import WebpackPage from './pages/Webpack-16-08-2026/WebpackPage'
+import MiniProjectPage from './pages/MiniProject-16-08-2026/MiniProjectPage'
+import BablePage from './pages/Babel-16-08-2026/BablePage'
+import AllConceptsPage from './pages/Revise all concepts-16-08-2026/AllConceptsPage'
+import FinalPage from './pages/Final Mini Project-16-08-2026/FinalPage'
+import ApplicationPage from './pages/ReactApplication-16-07-2026/ApplicationPage'
+import RoutingPage from './pages/Routing-16-08-2026/RoutingPage'
+import StudentPage from './pages/MiniStudent Management-17-08-2026/StudentPage'
+import FormPage1 from './pages/Form Validation-17-08-2026/FormPage1'
+import ApiCallPage from './pages/API Calls-18-08-2026/ApiCallPage'
+import FetchAxiosPage from './pages/Fetch Axios Examples-18-08-2026/FetchAxiosPage'
+import QueryPage from './pages/Query Parameters-18-08-2026/QueryPage'
+import ErrorPage from './pages/Error Handling-18-08-2026/ErrorPage'
+import LoadingStatesPage from './pages/Loading States-18-08-2026/LoadingStatesPage'
+import ResponsePage from './pages/API Response Handling-18-08-2026/ResponsePage'
+import IntegratePage from './pages/Integrate  API-18-08-2026/IntegratePage'
+//import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
+//import StatePage from './pages/State Management-16-08-2026/StatePage'
+
 
 
 
@@ -142,10 +184,10 @@ const App = () => {
     <Route path='/conditional-rendering' element={<ConditionalRenderingPage/>}/>
     <Route path='/local-state-practice' element={<LocalStatePage/>}/>
     <Route path='/conditional-rendering' element={<ConditionalPage/>}/>
-    <Route path='/implement-conditional-rendering-'element={<ConditionalRendering/>}/>
-    <Route path='/show-hide'element={<ShowHidePage/>}/>
-    <Route path='/roles-'element={<RolesPage/>}/>
-    <Route path='/States'element={<LoadingPage/>}/>
+    <Route path='/implement-conditional-rendering-' element={<ConditionalRendering/>}/>
+    <Route path='/show-hide' element={<ShowHidePage/>}/>
+    <Route path='/roles-' element={<RolesPage/>}/>
+    <Route path='/States' element={<LoadingPage/>}/>
     <Route path='/login-logout' element={<MiniPractcePage/>}/>
     <Route path='/Useeffect-hook'element={<UseEffectPage/>}/>
     <Route path='/api' element={<ApiReactPage/>}/>
@@ -178,14 +220,61 @@ const App = () => {
 <Route path='/Effect'element={<useEffectPage/>}/>
 <Route path='/Normal'element={<NormalPage/>}/>
 <Route path='/Shallow'element={<ShallowPage/>}/>
+<Route path='/Normal'element={<NormalPage/>}/>
+<Route path='/Exampl'element={<ExamlPage/>}/>
+<Route path='/Using'element={<UsingPage/>}/>
 <Route path='/Practical'element={<PracticalPage/>}/>
-<Route path='/mini'element={<MiniPage/>}/>
-
+<Route path='/mini6'element={<MiniPage/>}/>
+<Route path='/Fragment'element={<ReactPage/>}/>
+<Route path='/Avoiding'element={<AvoidingPage/>}/>
+<Route path='/hoc'element={<HocPage/>}/>
+<Route path='/cmusto'element={<CustomPage/>}/>
+<Route path='/Reusa'element={<ReusaPage/>}/>
+<Route path='/Api'element={<ApiCallsPage/>}/>
+<Route path='/Reuse'element={<ReuseCustomPage/>}/>
+<Route path='/pure'element={<PurePage/>}/>
+<Route path='/Memo'element={<MemoPage/>}/>
+<Route path='/Callback'element={<CallbackPage/>}/>
+<Route path='/List'element={<ListPage/>}/>
+<Route path='/Destructuring'element={<DestructuringPage/>}/>
+<Route path='/Lazy'element={<LazyPage/>}/>
+<Route path='/mini5'element={<ProjectPage/>}/>
+<Route path='/Broswer'element={<BrowserPage/>}/>
+<Route path='/mini4'element={<MiniPage/>}/>
+<Route path='/Nested'element={<NestedPage/>}/>
+<Route path='/dynamic'element={<DynamicPage/>}/>
+<Route path='/Parameter'element={<ParametersPage/>}/>
+<Route path='/Navigation'element={<NavigationPage/>}/>
+<Route path='/Routes'element={<RoutePage/>}/>
+<Route path='/Found'element={<FoundPage/>}/>
+<Route path='/mini3'element={<PracticePage/>}/>
+<Route path='/webpack'element={<WebpackPage/>}/>
+<Route path='/Mini2'element={<MiniProjectPage/>}/>
+<Route path='/Bable'element={<BablePage/>}/>
+<Route path='/all'element={<AllConceptsPage/>}/>
+<Route path='/Final'element={<FinalPage/>}/>
+<Route path='/React'element={<ApplicationPage/>}/>
+<Route path='/api'element={<ApiPage/>}/>
+<Route path='/Routing'element={<RoutingPage/>}/>
+<Route path='/mini1'element={<StudentPage/>}/>
+<Route path='/Controll'element={<ControlledPage/>}/>
+ <Route path='/handling'element={<HandlingPage />} />
+<Route path='/form'element={<FormPage1/>}/>
+<Route path='/dynamic'element={<DynamicPage/>}/>
+<Route path='/Form'element={<FormPage/>}/>
+//18-08-20026//
+<Route path='/api1'element={<ApiCallPage/>}/>
+<Route path='/fetch'element={<FetchAxiosPage/>}/>
+<Route path='/Query'element={<QueryPage/>}/>
+<Route path='/Error'element={<ErrorPage/>}/>
+<Route path='/Loading'element={<LoadingStatesPage/>}/>
+<Route path='/Response'element={<ResponsePage/>}/>
+<Route path='/Integrate'element={<IntegratePage/>}/>
 
 
   </Routes>
   </BrowserRouter>
-  )
+  );
 }
 
 export default App
