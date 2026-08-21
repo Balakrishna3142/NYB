@@ -122,6 +122,15 @@ import ErrorPage from './pages/Error Handling-18-08-2026/ErrorPage'
 import LoadingStatesPage from './pages/Loading States-18-08-2026/LoadingStatesPage'
 import ResponsePage from './pages/API Response Handling-18-08-2026/ResponsePage'
 import IntegratePage from './pages/Integrate  API-18-08-2026/IntegratePage'
+import APIPage from './pages/Context API/APIPage'
+import UseReducerPage from './pages/useReducer/UseReducerPage'
+import GlobalPage from './pages/Global State Management/GlobalPage'
+import ApiReduxPage from './pages/Context API vs Redux/ApiReduxPage'
+import ReactMemoPage from './pages/React.memo/ReactMemoPage'
+import SplittingPage from './pages/Code Splitting/SplittingPage'
+import SmallProjectPage from './pages/small Project4/SmallProjectPage'
+import ProtectedPage from './pages/Protected Routes/ProtectedPage'
+//import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
 //import StatePage from './pages/State Management-16-08-2026/StatePage'
 
@@ -262,7 +271,7 @@ const App = () => {
 <Route path='/form'element={<FormPage1/>}/>
 <Route path='/dynamic'element={<DynamicPage/>}/>
 <Route path='/Form'element={<FormPage/>}/>
-//18-08-20026//
+{/*18-08-20026*/}
 <Route path='/api1'element={<ApiCallPage/>}/>
 <Route path='/fetch'element={<FetchAxiosPage/>}/>
 <Route path='/Query'element={<QueryPage/>}/>
@@ -270,6 +279,31 @@ const App = () => {
 <Route path='/Loading'element={<LoadingStatesPage/>}/>
 <Route path='/Response'element={<ResponsePage/>}/>
 <Route path='/Integrate'element={<IntegratePage/>}/>
+{/*19-08-2026*/}
+<Route path='/API2'element={<APIPage/>}/>
+<Route path='/Use'element={<UseReducerPage/>}/>
+<Route path='/tool'element={<toolkitPage/>}/>
+<Route path='/Global'element={<GlobalPage/>}/>
+<Route path='/API11'element={<ApiReduxPage/>}/>
+
+<Route path='/memo1'element={<ReactMemoPage/>}/>
+<Route path='/memo'element={<useMemoPage/>}/>
+<Route path='/call1'element={<useCalbackPage/>}/>
+<Route path='/Lazy'element={<LoadingPage/>}/>
+<Route path='/Splitting'element={<SplittingPage/>}/>
+<Route path='/small'element={<SmallProjectPage/>}/>
+
+<Route path='/React'element={<ReactPage/>}/>
+<Route path='/Dynamic'element={<RoutingPage/>}/>
+<Route path='/Nested'element={<RoutingPage/>}/>
+<Route path='/Route'element={<ProtectedPage/>}/>
+<Route path='/Four'element={<Fourpage/>}/>
+<Route path='/small'element={<smallPage/>}/>
+<Route path='/React'element={<RevisionPage/>}/>
+
+
+
+
 
 
   </Routes>
