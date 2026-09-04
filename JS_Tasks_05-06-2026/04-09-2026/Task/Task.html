@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Task Manager</title>
+</head>
+<body>
+
+    <h1>My Task Manager</h1>
+
+    <!-- Task Form -->
+    <form id="taskForm">
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a task"
+            required
+        >
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <br>
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search tasks..."
+    >
+
+    <h3>My Tasks</h3>
+
+    <!-- Tasks will be displayed here -->
+    <ul id="taskList"></ul>
+
+    <br>
+
+    <!-- API Section -->
+    <button id="loadUsers">Load Users from API</button>
+
+    <ul id="userList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

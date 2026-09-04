@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Selection Example</title>
+</head>
+
+<body>
+
+    <h1 id="title">JavaScript</h1>
+
+    <p class="message">Hello</p>
+    <p class="message">Welcome</p>
+
+    <p>HTML</p>
+    <p>CSS</p>
+
+    <script>
+
+        // 1. getElementById()
+        let title = document.getElementById("title");
+        console.log("ID:", title.textContent);
+
+
+        // 2. getElementsByClassName()
+        let messages = document.getElementsByClassName("message");
+        console.log("Class:", messages[0].textContent);
+        console.log("Class:", messages[1].textContent);
+
+
+        // 3. getElementsByTagName()
+        let paragraphs = document.getElementsByTagName("p");
+        console.log("Tag:", paragraphs[0].textContent);
+
+
+        // 4. querySelector()
+        let firstMessage = document.querySelector(".message");
+        console.log("querySelector:", firstMessage.textContent);
+
+
+        // 5. querySelectorAll()
+        let allMessages = document.querySelectorAll(".message");
+        console.log("querySelectorAll:", allMessages.length);
+
+    </script>
+
+</body>
+</html>
