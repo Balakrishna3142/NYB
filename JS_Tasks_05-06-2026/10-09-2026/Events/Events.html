@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Example</title>
+</head>
+<body>
+
+    <h2>JavaScript Events</h2>
+
+    <!-- Normal Event -->
+    <button id="normalBtn">Normal Event</button>
+
+    <br><br>
+
+    <!-- Event Bubbling and Capturing -->
+    <div id="parent" style="padding:30px; border:2px solid black;">
+        Parent
+        <button id="child">Child</button>
+    </div>
+
+    <br>
+
+    <!-- Event Delegation -->
+    <ul id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <br>
+
+    <!-- Debouncing -->
+    <input type="text" id="search"
+           placeholder="Type something for Debouncing">
+
+    <p id="debounceOutput"></p>
+
+    <!-- Throttling -->
+    <button id="throttleBtn">Click for Throttling</button>
+
+    <p id="throttleOutput"></p>
+
+    <script src="./Events .js"></script>
+</body>
+</html>
