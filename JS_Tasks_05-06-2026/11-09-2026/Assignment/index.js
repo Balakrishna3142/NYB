@@ -77,11 +77,9 @@ console.log(greet(name));
 const { city } = college;
 console.log("College City:", city);
 
+const title = document.getElementById("title");
 
-//  DOM MANIPULATION
-
-document.getElementById("message").innerHTML =
-    "Welcome to JavaScript!";
+title.textContent = "Welcome to JavaScript";
 
 
 //  EVENT HANDLING
