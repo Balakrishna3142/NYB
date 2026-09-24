@@ -1,0 +1,40 @@
+/* 1. Universal Selector */
+* {
+    font-family: Arial;
+}
+
+
+/* 2. Element Selector */
+p {
+    color: blue;
+}
+
+
+/* 3. ID Selector */
+#para1 {
+    color: red;
+}
+
+
+/* 4. Class Selector */
+.text {
+    color: green;
+}
+
+
+/* 5. Group Selector */
+h2, h3 {
+    color: purple;
+}
+
+
+/* 6. Descendant Selector */
+.box p {
+    background-color: yellow;
+}
+
+
+/* 7. Child Selector */
+.parent > p {
+    background-color: lightblue;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* CSS Comment */
+
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #title {
+            color: red;
+        }
+
+        /* Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            background-color: lightblue;
+        }
+
+        /* Grouping Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* Descendant Selector */
+        .box p {
+            color: purple;
+        }
+
+        /* Child Selector */
+        .parent > p {
+            color: orange;
+        }
+
+        /* Adjacent Sibling Selector */
+        h4 + p {
+            color: brown;
+        }
+
+        /* General Sibling Selector */
+        h5 ~ p {
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Element Selector -->
+    <h1 id="title">Introduction to CSS</h1>
+
+    <p>This is an example of Element Selector.</p>
+
+    <!-- Class Selector -->
+    <p class="highlight">
+        This paragraph uses Class Selector.
+    </p>
+
+    <!-- ID Selector -->
+    <h2>CSS Selectors</h2>
+
+    <!-- Grouping Selector -->
+    <h3>Grouping Selector Example</h3>
+
+    <!-- Attribute Selector -->
+    <h3>Attribute Selector</h3>
+    <input type="text" placeholder="Enter your name">
+
+    <br><br>
+
+    <!-- Descendant Selector -->
+    <div class="box">
+        <p>This paragraph is inside the div.</p>
+    </div>
+
+    <!-- Child Selector -->
+    <div class="parent">
+        <p>This is a direct child of div.</p>
+
+        <section>
+            <p>This is NOT a direct child.</p>
+        </section>
+    </div>
+
+    <!-- Adjacent Sibling Selector -->
+    <h4>Adjacent Sibling</h4>
+    <p>This paragraph comes immediately after h4.</p>
+
+    <!-- General Sibling Selector -->
+    <h5>General Sibling</h5>
+    <p>Paragraph 1 after h5.</p>
+    <p>Paragraph 2 after h5.</p>
+
+    <!-- Inline CSS -->
+    <h2 style="color: blue;">
+        This heading uses Inline CSS
+    </h2>
+
+</body>
+</html>

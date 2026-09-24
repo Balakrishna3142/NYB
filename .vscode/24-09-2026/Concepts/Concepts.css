@@ -1,0 +1,112 @@
+/* 1. CSS Specificity */
+
+p {
+    color: blue;
+}
+
+.special {
+    color: green;
+}
+
+#unique {
+    color: red;
+}
+
+
+/* 2. Colors */
+
+.colors {
+    color: white;
+    background-color: purple;
+    padding: 10px;
+}
+
+
+/* 3. Background */
+
+.background {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+
+/* 4. Borders */
+
+.border {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* 5. Width and Height */
+
+.size {
+    width: 300px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+
+/* 6. Margin */
+
+.margin {
+    margin: 30px;
+    background-color: orange;
+    padding: 10px;
+}
+
+
+/* 7. Padding */
+
+.padding {
+    padding: 20px;
+    background-color: pink;
+}
+
+
+/* 8. Box Model */
+
+.box-model {
+    width: 200px;
+    height: 100px;
+
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    background-color: yellow;
+}
+
+
+/* 9. box-sizing */
+
+.box-sizing {
+    width: 200px;
+    height: 100px;
+
+    padding: 20px;
+    border: 5px solid blue;
+
+    box-sizing: border-box;
+
+    background-color: lightcyan;
+}
+
+
+/* 10. Opacity */
+
+.opacity {
+    width: 200px;
+    padding: 20px;
+
+    background-color: red;
+    opacity: 0.5;
+}
+
+
+/* 11. !important */
+
+.important {
+    color: blue !important;
+}
