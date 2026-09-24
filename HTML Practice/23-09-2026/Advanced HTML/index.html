@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced HTML Example</title>
+</head>
+
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>Student Registration</h1>
+        <p>Advanced HTML Demo</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section -->
+        <section>
+            <h2>Registration Form</h2>
+
+            <!-- Form Validation -->
+            <form>
+
+                <!-- Fieldset and Legend -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <!-- Label -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"
+                           required minlength="3">
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           required>
+
+                    <br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age"
+                           min="18" max="60" required>
+
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password"
+                           name="password"
+                           minlength="6" required>
+
+                    <br><br>
+
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+
+                </fieldset>
+
+            </form>
+        </section>
+
+
+        <!-- Figure and Figcaption -->
+        <section>
+            <h2>College Image</h2>
+
+            <figure>
+                <img src="images.jpg"
+                     alt="College Building"
+                     width="300">
+
+                <figcaption>
+                    Figure 1: Our College Building
+                </figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- Details and Summary -->
+        <section>
+            <h2>About HTML</h2>
+
+            <details>
+                <summary>Click here to learn about HTML</summary>
+
+                <p>
+                    HTML stands for HyperText Markup Language.
+                    It is used to create and structure web pages.
+                </p>
+
+            </details>
+        </section>
+
+
+        <!-- Iframe -->
+        <section>
+            <h2>Example Website</h2>
+
+            <iframe
+                src="https://www.example.com"
+                width="500"
+                height="250"
+                title="Example Website">
+            </iframe>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2026 Student Registration</p>
+    </footer>
+
+</body>
+</html>

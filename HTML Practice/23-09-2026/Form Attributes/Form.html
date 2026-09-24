@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Attributes</title>
+</head>
+<body>
+
+<form action="/submit" method="post" name="studentForm">
+
+    <!-- value -->
+    <label>Name:</label>
+    <input type="text" name="name" value="krishna">
+
+    <br><br>
+
+    <!-- placeholder -->
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter your email">
+
+    <br><br>
+
+    <!-- required -->
+    <label>Password:</label>
+    <input type="password" name="password" required>
+
+    <br><br>
+
+    <!-- readonly -->
+    <label>Country:</label>
+    <input type="text" name="country" value="India" readonly>
+
+    <br><br>
+
+    <!-- disabled -->
+    <label>Username:</label>
+    <input type="text" name="username" value="Guest" disabled>
+
+    <br><br>
+
+    <!-- min and max -->
+    <label>Age:</label>
+    <input type="number" name="age" min="18" max="60">
+
+    <br><br>
+
+    <!-- maxlength -->
+    <label>Username:</label>
+    <input type="text" name="username2" maxlength="10">
+
+    <br><br>
+
+    <!-- pattern -->
+    <label>Phone Number:</label>
+    <input type="text"
+           name="phone"
+           pattern="[0-9]{10}"
+           placeholder="Enter 10 digit number">
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

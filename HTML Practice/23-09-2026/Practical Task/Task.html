@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+    <title>Employee/Student Information</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #34495e;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        li {
+            margin: 8px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Employee / Student Information Page</h1>
+        <p>Personal and Academic Profile</p>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#media">Media</a>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile">
+        <h2>Profile</h2>
+
+        <img src="https://via.placeholder.com/150"
+             alt="Profile Image">
+
+        <h3>John Doe</h3>
+        <p><b>Student / Employee</b></p>
+        <p>Email: johndoe@example.com</p>
+        <p>Phone: +91 9876543210</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <ul>
+            <li>HTML and CSS</li>
+            <li>JavaScript</li>
+            <li>Python Programming</li>
+            <li>Communication Skills</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education Details</h2>
+
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Percentage / CGPA</th>
+            </tr>
+
+            <tr>
+                <td>B.Tech</td>
+                <td>jkc Engineering College</td>
+                <td>2014</td>
+                <td>8.5 CGPA</td>
+            </tr>
+
+            <tr>
+                <td>Intermediate</td>
+                <td>govt.. Junior College</td>
+                <td>2012</td>
+                <td>85%</td>
+            </tr>
+
+            <tr>
+                <td>SSC</td>
+                <td>ssm High School</td>
+                <td>2012</td>
+                <td>90%</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Audio and Video Section -->
+    <section id="media">
+        <h2>Audio Section</h2>
+
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Video Section</h2>
+
+        <video width="500" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Employee/Student Information Page</p>
+    </footer>
+
+</body>
+</html>
