@@ -1,0 +1,190 @@
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* ---------------------------------
+   1. Flex Container
+   Flex Direction
+   Justify Content
+   Align Items
+--------------------------------- */
+
+.container {
+    display: flex;              /* Flex Container */
+    flex-direction: row;        /* Direction */
+    justify-content: center;    /* Horizontal alignment */
+    align-items: center;        /* Vertical alignment */
+
+    height: 150px;
+    border: 2px solid black;
+}
+
+.box {
+    width: 80px;
+    height: 60px;
+    background-color: lightblue;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------------------
+   2. Flex Wrap
+   Align Content
+--------------------------------- */
+
+.wrap-container {
+    display: flex;
+
+    flex-wrap: wrap;             /* Allows items to move to next line */
+    align-content: space-around; /* Controls multiple rows */
+
+    height: 250px;
+    border: 2px solid black;
+}
+
+.wrap-container .box {
+    margin: 5px;
+}
+
+
+/* ---------------------------------
+   3. Gap
+--------------------------------- */
+
+.gap-container {
+    display: flex;
+
+    gap: 30px;                   /* Space between items */
+
+    border: 2px solid black;
+    padding: 20px;
+}
+
+
+/* ---------------------------------
+   4. Flex Grow
+--------------------------------- */
+
+.grow-container {
+    display: flex;
+    border: 2px solid black;
+}
+
+.grow-box {
+    padding: 20px;
+    text-align: center;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+.one {
+    flex-grow: 1;
+}
+
+.two {
+    flex-grow: 2;
+}
+
+.three {
+    flex-grow: 1;
+}
+
+
+/* ---------------------------------
+   5. Flex Shrink
+--------------------------------- */
+
+.shrink-container {
+    display: flex;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.shrink-box {
+    width: 250px;
+    padding: 20px;
+    background-color: lightcoral;
+    border: 1px solid black;
+
+    flex-shrink: 1;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+
+/* ---------------------------------
+   6. Flex Basis
+--------------------------------- */
+
+.basis-container {
+    display: flex;
+    border: 2px solid black;
+}
+
+.basis-box {
+    background-color: lightyellow;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.basis-box:nth-child(1) {
+    flex-basis: 200px;
+}
+
+.basis-box:nth-child(2) {
+    flex-basis: 100px;
+}
+
+.basis-box:nth-child(3) {
+    flex-basis: 150px;
+}
+
+
+/* ---------------------------------
+   7. Order
+--------------------------------- */
+
+.order-container {
+    display: flex;
+    border: 2px solid black;
+}
+
+.order-box {
+    width: 100px;
+    padding: 20px;
+    background-color: lightpink;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.first {
+    order: 3;
+}
+
+.second {
+    order: 1;
+}
+
+.third {
+    order: 2;
+}

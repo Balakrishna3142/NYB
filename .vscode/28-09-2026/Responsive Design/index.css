@@ -1,0 +1,58 @@
+/* Mobile-first Design */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Image */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Breakpoint - Tablet */
+@media (min-width: 600px) {
+
+    .container {
+        flex-direction: row;
+    }
+
+    .box {
+        width: 50%;
+    }
+}
+
+/* Breakpoint - Desktop */
+@media (min-width: 1000px) {
+
+    .container {
+        width: 900px;
+        margin: auto;
+    }
+
+    .box {
+        width: 33.33%;
+    }
+}

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex: 45%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

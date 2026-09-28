@@ -1,0 +1,28 @@
+/* Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.products div {
+    background-color: lightgreen;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid black;
+}

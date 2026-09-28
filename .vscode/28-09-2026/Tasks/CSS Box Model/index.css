@@ -1,0 +1,18 @@
+.box {
+    width: 300px;
+    height: 150px;
+
+    /* Space inside the border */
+    padding: 20px;
+
+    /* Border around the box */
+    border: 5px solid blue;
+
+    /* Space outside the border */
+    margin: 50px auto;
+
+    /* Includes padding and border in width and height */
+    box-sizing: border-box;
+
+    background-color: lightyellow;
+}

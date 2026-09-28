@@ -1,0 +1,38 @@
+
+/* Positioning Context */
+.container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* Common box properties */
+.box {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+}
+
+/* Stacking Order */
+.box1 {
+    top: 30px;
+    left: 30px;
+    background-color: red;
+    z-index: 1;
+}
+
+.box2 {
+    top: 80px;
+    left: 80px;
+    background-color: blue;
+    z-index: 2;
+}
+
+.box3 {
+    top: 130px;
+    left: 130px;
+    background-color: green;
+    z-index: 3;
+}

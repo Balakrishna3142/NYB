@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="./idex.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        .content {
+            width: 75%;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Menu Item 1</p>
+            <p>Menu Item 2</p>
+            <p>Menu Item 3</p>
+        </aside>
+
+        <main class="content">
+            <h2>Welcome to My Website</h2>
+            <p>
+                This is a responsive webpage. Resize the browser
+                window to see the layout change for mobile devices.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Information about card 1.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Information about card 2.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Card 3</h3>
+                    <p>Information about card 3.</p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

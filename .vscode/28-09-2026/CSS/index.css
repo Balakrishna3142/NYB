@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 1500px;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. STATIC */
+.static {
+    position: static;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/* Parent for Absolute */
+.parent {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 30px;
+    padding: 20px;
+}
+
+/* 2. RELATIVE */
+.relative {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    background-color: orange;
+    padding: 20px;
+}
+
+/* 3. ABSOLUTE */
+.absolute {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+/* 4. FIXED */
+.fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+/* 5. STICKY */
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

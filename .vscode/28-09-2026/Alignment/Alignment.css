@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 1. Horizontal Alignment */
+.horizontal {
+    width: 400px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* 2. Vertical Alignment */
+.vertical {
+    width: 400px;
+    height: 150px;
+    background-color: lightgreen;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3. Flex Alignment */
+.flex-container {
+    height: 150px;
+    background-color: lightyellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex-container div {
+    background-color: orange;
+    padding: 20px;
+}
+
+/* 4. Grid Alignment */
+.grid-container {
+    height: 200px;
+    background-color: lightpink;
+
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.grid-container div {
+    background-color: violet;
+    padding: 20px;
+    text-align: center;
+}

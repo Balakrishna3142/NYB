@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box1 {
+    width: 150px;
+    height: 100px;
+    background-color: lightblue;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+}
+
+.box2 {
+    width: 150px;
+    height: 100px;
+    background-color: lightgreen;
+    float: right;
+    margin: 10px;
+    padding: 20px;
+}
+
+.clear-box {
+    clear: both;
+    background-color: lightcoral;
+    padding: 20px;
+    margin-top: 20px;
+}
