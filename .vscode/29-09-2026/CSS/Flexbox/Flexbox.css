@@ -1,0 +1,84 @@
+/* Flex Container */
+.flex-container {
+    display: flex;
+
+    /* Direction of flex items */
+    flex-direction: row;
+
+    /* Horizontal alignment */
+    justify-content: space-between;
+
+    /* Vertical alignment */
+    align-items: center;
+
+    /* Alignment of multiple rows */
+    align-content: center;
+
+    /* Allows items to move to next line */
+    flex-wrap: wrap;
+
+    /* Space between items */
+    gap: 20px;
+
+    width: 600px;
+    height: 400px;
+
+    margin: 50px auto;
+    padding: 20px;
+
+    background-color: lightgray;
+}
+
+
+/* Common box styling */
+.box {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 18px;
+}
+
+
+/* flex-grow */
+.box1 {
+    background-color: red;
+
+    flex-grow: 1;
+}
+
+
+/* flex-shrink */
+.box2 {
+    background-color: blue;
+
+    flex-shrink: 1;
+}
+
+
+/* flex-basis */
+.box3 {
+    background-color: green;
+
+    flex-basis: 150px;
+}
+
+
+/* order */
+.box4 {
+    background-color: orange;
+
+    order: -1;
+}
+
+
+/* Normal item */
+.box5 {
+    background-color: purple;
+
+    order: 2;
+}

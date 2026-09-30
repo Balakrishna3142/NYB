@@ -1,0 +1,24 @@
+
+/* ::before */
+.before::before {
+    content: "★ ";
+    color: blue;
+}
+
+/* ::after */
+.after::after {
+    content: " ✓";
+    color: green;
+}
+
+/* ::first-letter */
+.letter::first-letter {
+    color: red;
+    font-size: 40px;
+}
+
+/* ::first-line */
+.line::first-line {
+    color: purple;
+    font-weight: bold;
+}

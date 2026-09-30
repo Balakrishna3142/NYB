@@ -1,0 +1,134 @@
+
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --light-color: #f4f4f4;
+    --white-color: white;
+
+    --card-width: 320px;
+    --spacing: 20px;
+    --radius: 12px;
+}
+
+
+
+   PAGE
+   
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    width: var(--card-width);
+    margin: 100px auto;
+    padding: var(--spacing);
+
+    background-color: var(--white-color);
+    color: var(--text-color);
+
+    border-radius: var(--radius);
+    text-align: center;
+
+    position: relative;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   PSEUDO-ELEMENTS
+   ========================= */
+
+/* Decorative circle before card */
+.card::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+
+/* Decorative circle after card */
+.card::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+
+/* =========================
+   ICON
+   ========================= */
+
+.card-icon {
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+
+
+   ADVANCED SELECTOR
+   
+
+/* Selects the h2 inside the card */
+.card > h2 {
+    color: var(--primary-color);
+}
+
+
+/* Adds decoration after heading */
+.card h2::after {
+    content: " ★";
+    color: var(--secondary-color);
+}
+
+
+/* Selects paragraph that is not a special class */
+.card p:not(.special) {
+    line-height: 1.6;
+}
+
+
+
+   BUTTON
+
+.card button {
+    padding: 10px 20px;
+
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    border: none;
+    border-radius: var(--radius);
+
+    cursor: pointer;
+}
+
+
+/* Hover pseudo-class */
+.card button:hover {
+    background-color: var(--secondary-color);
+}

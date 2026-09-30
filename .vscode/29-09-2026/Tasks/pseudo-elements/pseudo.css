@@ -1,0 +1,55 @@
+/* Card styling */
+.card {
+    width: 300px;
+    padding: 30px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    position: relative;
+}
+
+/* Decorative circle before the card */
+.card::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+
+/* Decorative circle after the card */
+.card::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+}
+
+/* Decorative line before heading */
+h2::before {
+    content: " ";
+    color: orange;
+}
+
+/* Decorative line after heading */
+h2::after {
+    content: " ";
+    color: orange;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

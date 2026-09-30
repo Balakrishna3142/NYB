@@ -1,0 +1,108 @@
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header and Background */
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    background-color: lightblue;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: darkblue;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    margin: 25px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+    color: darkblue;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+/* Form Styling */
+form {
+    width: 400px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Footer */
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

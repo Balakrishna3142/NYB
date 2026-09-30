@@ -1,0 +1,96 @@
+
+   /*RESET*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+  /* NAVBAR*/
+   
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background-color: #333;
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   NAVIGATION LINKS
+   ========================= */
+
+.nav-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+
+/* =========================
+   MENU BUTTON
+   ========================= */
+
+.menu-btn {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    /* Hide navigation links */
+    .nav-links {
+        display: none;
+    }
+
+    /* Show menu button */
+    .menu-btn {
+        display: block;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>My Dashboard</h1>
+
+            <div class="profile">
+                <span>Welcome, User</span>
+                <button>Logout</button>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Menu</h2>
+
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <h2>Dashboard Overview</h2>
+
+            <!-- Cards -->
+            <section class="cards">
+
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>1,250</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p>$8,500</p>
+                </div>
+
+                <div class="card">
+                    <h3>Orders</h3>
+                    <p>320</p>
+                </div>
+
+                <div class="card">
+                    <h3>Products</h3>
+                    <p>150</p>
+                </div>
+
+            </section>
+
+            <!-- Table -->
+            <section class="table-section">
+
+                <h2>Recent Orders</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>Ravi</td>
+                            <td>Laptop</td>
+                            <td>$800</td>
+                            <td>Completed</td>
+                        </tr>
+
+                        <tr>
+                            <td>#1002</td>
+                            <td>Sita</td>
+                            <td>Phone</td>
+                            <td>$500</td>
+                            <td>Pending</td>
+                        </tr>
+
+                        <tr>
+                            <td>#1003</td>
+                            <td>Rahul</td>
+                            <td>Headphones</td>
+                            <td>$100</td>
+                            <td>Completed</td>
+                        </tr>
+
+                        <tr>
+                            <td>#1004</td>
+                            <td>Priya</td>
+                            <td>Keyboard</td>
+                            <td>$70</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 My Dashboard. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* Select input with type="text" */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+/* Select input with type="email" */
+input[type="email"] {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* Select input with type="password" */
+input[type="password"] {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+/* Select links with href attribute */
+a[href] {
+    color: purple;
+    font-weight: bold;
+}

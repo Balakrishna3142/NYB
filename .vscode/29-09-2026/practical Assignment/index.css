@@ -1,0 +1,336 @@
+/* =========================
+   General Styling
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+.header {
+    background-color: #123456;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    /* Positioning */
+    position: sticky;
+    top: 0;
+
+    /* Z-index */
+    z-index: 1000;
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+
+/* =========================
+   Hero Section
+   ========================= */
+
+.hero {
+    min-height: 450px;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://via.placeholder.com/1200x500");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 45px;
+}
+
+
+/* =========================
+   Button
+   ========================= */
+
+.btn,
+button {
+    display: inline-block;
+
+    background-color: #007bff;
+    color: white;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* =========================
+   Sections
+   ========================= */
+
+.section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.section h2 {
+    color: #123456;
+    text-align: center;
+}
+
+
+/* =========================
+   Image Section
+   ========================= */
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+
+    margin: 20px auto;
+
+    border: 5px solid #123456;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   Services - CSS Grid
+   ========================= */
+
+.services {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Cards */
+
+.card {
+    background-color: #eef6ff;
+
+    padding: 25px;
+
+    border: 2px solid #007bff;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   Table
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #123456;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* =========================
+   Lists
+   ========================= */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px;
+}
+
+
+/* =========================
+   Form
+   ========================= */
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+    margin-top: 5px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    background-color: #123456;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer a {
+    color: yellow;
+}
+
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,45 @@
+/* Attribute Selector */
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+/* Descendant Selector */
+.container p {
+    color: red;
+}
+
+/* Child Selector */
+.container > h2 {
+    color: green;
+}
+
+/* Adjacent Sibling Selector */
+h2 + p {
+    background-color: yellow;
+}
+
+/* :first-child */
+li:first-child {
+    font-weight: bold;
+}
+
+/* :nth-child() */
+li:nth-child(2) {
+    color: purple;
+}
+
+/* :not() */
+p:not(.special) {
+    font-style: italic;
+}
+
+/* :has() */
+.box:has(img) {
+    border: 3px solid orange;
+    padding: 10px;
+}
+
+/* Attribute Contains Selector */
+a[href*="google"] {
+    color: brown;
+}

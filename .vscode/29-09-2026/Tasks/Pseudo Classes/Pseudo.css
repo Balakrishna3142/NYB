@@ -1,0 +1,121 @@
+
+
+/* :hover */
+.btn:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+/* :active */
+.btn:active {
+    background-color: red;
+}
+
+/* :focus */
+.btn:focus {
+    outline: 3px solid orange;
+}
+
+/* :disabled */
+button:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   LINK PSEUDO-CLASSES
+   ========================= */
+
+/* Unvisited link */
+a:link {
+    color: blue;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Mouse over link */
+a:hover {
+    color: red;
+}
+
+/* While clicking */
+a:active {
+    color: green;
+}
+
+
+/* =========================
+   CARD PSEUDO-CLASSES
+   ========================= */
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 180px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* Hover card */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px gray;
+}
+
+/* First card */
+.card:first-child {
+    border-top: 5px solid blue;
+}
+
+/* Last card */
+.card:last-child {
+    border-bottom: 5px solid red;
+}
+
+/* Even cards */
+.card:nth-child(even) {
+    background-color: lightgray;
+}
+
+
+/* =========================
+   FORM PSEUDO-CLASSES
+   ========================= */
+
+/* Input when selected */
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+/* Required/valid example */
+input:valid {
+    border-color: green;
+}
+
+/* Invalid input */
+input:invalid {
+    border-color: red;
+}
+
+/* Checked checkbox */
+input:checked {
+    accent-color: green;
+}
+
+/* Submit button hover */
+form button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}

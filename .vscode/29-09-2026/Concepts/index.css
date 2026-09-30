@@ -1,0 +1,50 @@
+
+/* 1. CSS Specificity */
+p {
+    color: blue;
+}
+
+.special {
+    color: red;
+}
+
+
+/* 2. CSS Inheritance */
+.box {
+    font-family: Arial;
+    color: green;
+}
+
+
+/* 3. CSS Variables */
+:root {
+    --main-color: purple;
+}
+
+h2 {
+    color: var(--main-color);
+}
+
+
+/* 4. Colors and Backgrounds */
+body {
+    background-color: lightgray;
+}
+
+.box {
+    background-color: white;
+}
+
+
+/* 5. Borders */
+.box {
+    border: 3px solid black;
+}
+
+
+/* 6. Box Model */
+.box {
+    width: 400px;
+    padding: 20px;
+    margin: 30px;
+}

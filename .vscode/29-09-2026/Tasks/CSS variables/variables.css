@@ -1,0 +1,43 @@
+/* Creating reusable CSS variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --spacing: 20px;
+    --border-radius: 10px;
+}
+
+/* Using the variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 300px;
+    margin: 100px auto;
+    padding: var(--spacing);
+    text-align: center;
+
+    background-color: white;
+    border: 3px solid var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+}
