@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Responsive Design Demo</title>
+<link rel="stylesheet" href="./index.css">
+    <style>
+        /*  Responsive Web Design */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Mobile-First Design */
+        .container {
+            display: block;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            padding: 30px;
+            margin: 10px 0;
+            background: lightblue;
+
+            /*  clamp() */
+            font-size: clamp(18px, 4vw, 30px);
+
+            /*  CSS Transition */
+            transition: 0.5s;
+        }
+
+        /*  Hover Effect + 10. Transform */
+        .card:hover {
+            background: orange;
+            transform: scale(1.05);
+        }
+
+        /*  Responsive Image */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*  min-width - Breakpoint */
+        @media (min-width: 768px) {
+            .container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .card {
+                width: 33.33%;
+            }
+        }
+
+        /* 7. max-width - Breakpoint */
+        @media (max-width: 600px) {
+            body {
+                background: #eeeeee;
+            }
+        }
+
+        /* Animation and @keyframes */
+        .moving-box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 30px;
+
+            animation: move 3s infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(200px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* 14. Positioning */
+        .parent {
+            position: relative;
+            height: 150px;
+            background: lightgreen;
+        }
+
+        .child {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 20px;
+            background: blue;
+            color: white;
+        }
+
+        /* 15. Z-Index */
+        .box1,
+        .box2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .box1 {
+            background: red;
+            z-index: 1;
+        }
+
+        .box2 {
+            background: blue;
+            color: white;
+            left: 50px;
+            top: 30px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Web Design</h1>
+
+    <!-- Responsive Cards -->
+    <div class="container">
+
+        <div class="card">
+            HTML
+        </div>
+
+        <div class="card">
+            CSS
+        </div>
+
+        <div class="card">
+            JavaScript
+        </div>
+
+    </div>
+
+    <!-- Responsive Image -->
+    <h2>Responsive Image</h2>
+    <img src="https://via.placeholder.com/600x200"
+         alt="Responsive Image">
+
+    <!-- Animation -->
+    <h2>CSS Animation</h2>
+    <div class="moving-box"></div>
+
+    <!-- Positioning -->
+    <h2>Positioning</h2>
+
+    <div class="parent">
+        <div class="child">
+            Absolute Box
+        </div>
+    </div>
+
+    <!-- Z-Index -->
+    <h2>Z-Index</h2>
+
+    <div style="position: relative; height: 150px;">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+    </div>
+
+</body>
+</html>

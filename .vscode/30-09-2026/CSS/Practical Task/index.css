@@ -1,0 +1,268 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+   NAVIGATION
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    background: #222;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    /* Hover transition */
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 8%;
+    background: #eaf4ff;
+}
+
+.hero-text {
+    width: 50%;
+
+    /* Animation */
+    animation: slideIn 1s ease;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 60px);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 45%;
+    max-width: 500px;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+button:hover {
+    background: orange;
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.services {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.services > h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px #ccc;
+
+    transition: 0.4s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px #999;
+}
+
+
+/* =========================
+   CALL TO ACTION
+   ========================= */
+
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #222;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+
+/* =========================
+   ANIMATION
+   ========================= */
+
+@keyframes slideIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 40px 5%;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 45%;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    /* Cards */
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}

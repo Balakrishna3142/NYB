@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+/* Animated Box */
+.box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Animation */
+    animation: moveBox 3s infinite;
+}
+
+/* Define Animation */
+@keyframes moveBox {
+
+    0% {
+        transform: translateX(0);
+        background: blue;
+    }
+
+    50% {
+        transform: translateX(300px);
+        background: orange;
+    }
+
+    100% {
+        transform: translateX(0);
+        background: blue;
+    }
+}

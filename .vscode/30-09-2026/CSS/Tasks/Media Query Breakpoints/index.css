@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+/* Common style */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    padding: 40px;
+    background: lightblue;
+    border: 2px solid black;
+    flex: 1;
+}
+
+
+/*  Mobile */
+/* 0px - 600px */
+@media (max-width: 600px) {
+
+    body {
+        background: lightgreen;
+    }
+
+    .box {
+        flex: 100%;
+    }
+}
+
+
+/*  Tablet */
+/* 601px - 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    body {
+        background: orange;
+    }
+
+    .box {
+        flex: 45%;
+    }
+}
+
+
+/*  Laptop */
+/* 901px - 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    body {
+        background: lightblue;
+    }
+
+    .box {
+        flex: 45%;
+    }
+}
+
+
+/*  Desktop */
+/* Above 1200px */
+@media (min-width: 1201px) {
+
+    body {
+        background: lightpink;
+    }
+
+    .box {
+        flex: 1;
+    }
+}

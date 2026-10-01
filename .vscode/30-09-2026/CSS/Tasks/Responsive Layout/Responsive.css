@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Header */
+header {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Desktop Layout */
+.container {
+    display: flex;
+    min-height: 400px;
+}
+
+aside {
+    width: 25%;
+    background: lightgray;
+    padding: 20px;
+}
+
+main {
+    width: 75%;
+    padding: 20px;
+    background: lightblue;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+    }
+}

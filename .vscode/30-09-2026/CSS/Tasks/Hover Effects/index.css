@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Card */
+.card {
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    background: lightblue;
+    border: 2px solid blue;
+
+    /* Transition */
+    transition: 0.5s;
+}
+
+/* Card Hover */
+.card:hover {
+    background: blue;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    background: green;
+    color: white;
+    border: none;
+
+    /* Transition */
+    transition: 0.5s;
+}
+
+/* Button Hover */
+button:hover {
+    background: red;
+    transform: translateY(-5px);
+}
