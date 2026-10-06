@@ -130,6 +130,12 @@ import ReactMemoPage from './pages/React.memo/ReactMemoPage'
 import SplittingPage from './pages/Code Splitting/SplittingPage'
 import SmallProjectPage from './pages/small Project4/SmallProjectPage'
 import ProtectedPage from './pages/Protected Routes/ProtectedPage'
+import JsxPage from './pages/JSX/JsxPage'
+import ValiPage from './pages/Valid and Invalid JSX/ValiPage'
+import FragmentsPage from './pages/Fragments/FragmentsPage'
+import StrictPage from './pages/Strict Mode/StrictPage'
+import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'
+import CallingPage from './pages/Calling Functions in Components/CallingPage'
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
 //import StatePage from './pages/State Management-16-08-2026/StatePage'
@@ -297,14 +303,25 @@ const App = () => {
 <Route path='/Dynamic'element={<RoutingPage/>}/>
 <Route path='/Nested'element={<RoutingPage/>}/>
 <Route path='/Route'element={<ProtectedPage/>}/>
-<Route path='/Four'element={<Fourpage/>}/>
 <Route path='/small'element={<smallPage/>}/>
 <Route path='/React'element={<RevisionPage/>}/>
+<Route path='/Call'element={<CallbackPage/>}/>
 
+{/*05-10-2026*/}
+<Route path='/scratch'element={<scratch/>}/>
+<Route path='/components'element={<ComponentPage/>}/>
+<Route path='/function'element={<FunctionalPage/>}/>
+<Route path='/jsx'element={<JsxPage/>}/>
+<Route path='/jsxRul'element={<JsxPage/>}/>
+<Route path='/Valid'element={<ValiPage/>}/>
+<Route path='/Fragment'element={<FragmentsPage/>}/>
+<Route path='/Strict'element={<StrictPage/>}/>
+<Route path='/Rendering'element={<RenderingPage/>}/>
+<Route path='/Call'element={<CallingPage/>}/>
 
-
-
-
+<Route path='/React1'element={<ReactPage/>}/>
+<Route path='/mini4'element={<MiniPage/>}/>
+<Route path='/Function'element={<FunctionalPage/>}/>
 
   </Routes>
   </BrowserRouter>

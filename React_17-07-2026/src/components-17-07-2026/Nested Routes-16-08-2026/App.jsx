@@ -112,7 +112,7 @@ function Courses() {
 
 function App() {
   return (
-    <BrowserRouter>
+    
 
       <div
         style={{
@@ -181,7 +181,7 @@ function App() {
 
       </div>
 
-    </BrowserRouter>
+    
   );
 }
 
