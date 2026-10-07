@@ -1,0 +1,12 @@
+import React from 'react'
+import App from '../../components-17-07-2026/06-10-2026/useState/App'
+
+function UseStatePage() {
+  return (
+    <div>
+        <App/>
+    </div>
+  )
+}
+
+export default UseStatePage

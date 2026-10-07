@@ -134,8 +134,20 @@ import JsxPage from './pages/JSX/JsxPage'
 import ValiPage from './pages/Valid and Invalid JSX/ValiPage'
 import FragmentsPage from './pages/Fragments/FragmentsPage'
 import StrictPage from './pages/Strict Mode/StrictPage'
-import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'
-import CallingPage from './pages/Calling Functions in Components/CallingPage'
+import StatePage from './components-17-07-2026/06-10-2026/State/StatePage'
+import ParentPage from './pages/ParentandChildComponents/ParentPage'
+import ChildPage from './pages/Child to Parent/ChildPage'
+import HierachyPage from './pages/Component Hierarchy/HierachyPage'
+import PassingPage from './pages/Passing Functions asProps/PassingPage'
+import SharingPage from './pages/Sharing Data BetweenComponents/SharingPage'
+import RenderingPage from './pages/Conditional Rendering/RenderingPage'
+import ValidPage from './pages/valid and invalidJSX/ValidPage'
+import JavaScriptPage from './pages/JavaScript expressions/JavaScriptPage'
+import Fragment from './pages/Fragment/Fragment'
+import StrictPagePage from './pages/Strict Modes/StrictPagePage'
+//import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
+//import CallingPage from './pages/Calling Functions in Components/CallingPage'//
+//import PropPage from './pages/Props/PropPage'//
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
 //import StatePage from './pages/State Management-16-08-2026/StatePage'
@@ -316,12 +328,45 @@ const App = () => {
 <Route path='/Valid'element={<ValiPage/>}/>
 <Route path='/Fragment'element={<FragmentsPage/>}/>
 <Route path='/Strict'element={<StrictPage/>}/>
-<Route path='/Rendering'element={<RenderingPage/>}/>
-<Route path='/Call'element={<CallingPage/>}/>
+{/*<Route path='/Rendering'element={<RenderingPage/>}/>*/}
+{/*<Route path='/Call'element={<CallingPage/>}/>*/}
 
 <Route path='/React1'element={<ReactPage/>}/>
 <Route path='/mini4'element={<MiniPage/>}/>
 <Route path='/Function'element={<FunctionalPage/>}/>
+
+<Route path='/props'element={<PropsPage/>}/>
+<Route path='/State'element={<StatePage/>}/>
+<Route path='/Use'element={<UseStatePage/>}/>
+<Route path='/Parent1'element={<ParentPage/>}/>
+<Route path='/Parent2'element={<ParentPage/>}/>
+<Route path='/Child'element={<ChildPage/>}/>
+<Route path='/Components1'element={<HierachyPage/>}/>
+<Route path='/Passing'element={<PassingPage/>}/>
+<Route path='/Sharing'element={<SharingPage/>}/>
+<Route path='/Rendering'element={<RenderingPage/>}/>
+<Route path='/Valid'element={<ValidPage/>}/>
+<Route path='/Mini2'element={<MiniPage/>}/>
+<Route path='/Java'element={<JavaScriptPage/>}/>
+<Route path='/Fragment'element={<Fragment/>}/>
+<Route path='/Strict'element={<StrictPage/>}/>
+<Route path='/Reusable'element={<ReusablePage/>}/>
+<Route path='/Parent2'element={<ParentPage/>}/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </Routes>
   </BrowserRouter>
