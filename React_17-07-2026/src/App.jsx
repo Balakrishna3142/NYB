@@ -145,6 +145,13 @@ import ValidPage from './pages/valid and invalidJSX/ValidPage'
 import JavaScriptPage from './pages/JavaScript expressions/JavaScriptPage'
 import Fragment from './pages/Fragment/Fragment'
 import StrictPagePage from './pages/Strict Modes/StrictPagePage'
+import EventPage from './pages/Event Handling/EventPage'
+//import InputPage from './pages/Input Handling/InputPage'//
+import DynamicForm from './components-17-07-2026/07-10-2026/Dynamic Forms/DynamicForm'
+import KeysPaeg from './pages/Keys/KeysPaeg'
+import DependencyPage from './pages/Dependency Array/DependencyPage'
+import HierarchyPage from './pages/Hierarchy/HierarchyPage'
+import HandlePage from './pages/Handle click/HandlePage'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
 //import CallingPage from './pages/Calling Functions in Components/CallingPage'//
 //import PropPage from './pages/Props/PropPage'//
@@ -354,19 +361,28 @@ const App = () => {
 <Route path='/Parent2'element={<ParentPage/>}/>
 
 
+<Route path='/Event'element={<EventPage/>}/>
+<Route path='/Form'element={<FormPage/>}/>
+<Route path='/Controlled1'element={<ControlledPage/>}/>
+<Route path='/Dynamic'element={<DynamicForm/>}/>
+<Route path='/List'element={<ListPage/>}/>
+<Route path='/map'element={<MapPage/>}/>
+<Route path='/key'element={<KeysPaeg/>}/>
+<Route path='/Conditional'element={<ConditionalPage/>}/>
+<Route path='/useEffect'element={<useEffectPage/>}/>
+<Route path='/Component'element={<ComponentPage/>}/>
+<Route path='/Dependency'element={<DependencyPage/>}/>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<Route path='/Use1'element={<UsingPage/>}/>
+<Route path='/Parent'element={<ParentPage/>}/>
+<Route path='/Child'element={<ChildPage/>}/>
+<Route path='/Hierarchy'element={<HierarchyPage/>}/>
+<Route path='/use'element={<UseStatePage/>}/>
+<Route path='/Conditional'element={<ConditionalPage/>}/>
+<Route path='/Handle'element={<HandlePage/>}/>
+<Route path='/mini'element={<MiniPage/>}/>
+<Route path='/Controlled'element={<ControlledPage/>}/>
+<Route path='/dynamically'element={<dynamically/>}/>
 
   </Routes>
   </BrowserRouter>
