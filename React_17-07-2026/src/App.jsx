@@ -152,6 +152,10 @@ import KeysPaeg from './pages/Keys/KeysPaeg'
 import DependencyPage from './pages/Dependency Array/DependencyPage'
 import HierarchyPage from './pages/Hierarchy/HierarchyPage'
 import HandlePage from './pages/Handle click/HandlePage'
+import AwaitPage from './pages/AsyncAwait/AwaitPage'
+import EmptyPage from './pages/Empty State/EmptyPage'
+import KeysPage from './pages/Keys in React/KeysPage'
+import UsePage from './pages/useStateanduseEffect/UsePage'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
 //import CallingPage from './pages/Calling Functions in Components/CallingPage'//
 //import PropPage from './pages/Props/PropPage'//
@@ -383,6 +387,31 @@ const App = () => {
 <Route path='/mini'element={<MiniPage/>}/>
 <Route path='/Controlled'element={<ControlledPage/>}/>
 <Route path='/dynamically'element={<dynamically/>}/>
+
+<Route path='/Api'element={<ApiPage/>}/>
+<Route path='/Await'element={<AwaitPage/>}/>
+<Route path='/Loading'element={<LoadingPage/>}/>
+<Route path='/Error'element={<ErrorPage/>}/>
+<Route path='/Empty'element={<EmptyPage/>}/>
+<Route path='/Api4'element={<ResponsePage/>}/>
+<Route path='/Dynamic4'element={<DynamicPage/>}/>
+<Route path='/map'element={<UsingPage/>}/>
+<Route path='/Key'element={<KeysPage/>}/>
+<Route path='/Rendering'element={<RenderingPage/>}/>
+<Route path='/use'element={<useEffectPage/>}/>
+<Route path='/useState'element={<UsePage/>}/>
+<Route path='/Api'element={<ApiPage/>}/>
+<Route path='/Task1'element={<PracticalPage/>}/>
+
+
+
+
+
+
+
+
+
+
 
   </Routes>
   </BrowserRouter>
