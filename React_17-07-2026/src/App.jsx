@@ -156,9 +156,13 @@ import AwaitPage from './pages/AsyncAwait/AwaitPage'
 import EmptyPage from './pages/Empty State/EmptyPage'
 import KeysPage from './pages/Keys in React/KeysPage'
 import UsePage from './pages/useStateanduseEffect/UsePage'
+import Context from './pages/Context API1/ContextPage'
+import ContextPage from './components-17-07-2026/19-08-2026/Context API/pages/ContextPage'
+import RevisionPagr from './pages/Revision/RevisionPage'
+import TasksPage from './pages/Tasks/TasksPage'
+import BrowserRouterPage from './pages/BrowserRouter/BrowserRouterPage'
+import LinkPage from './pages/Link/LinkPage'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
-//import CallingPage from './pages/Calling Functions in Components/CallingPage'//
-//import PropPage from './pages/Props/PropPage'//
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
 //import StatePage from './pages/State Management-16-08-2026/StatePage'
@@ -402,15 +406,12 @@ const App = () => {
 <Route path='/useState'element={<UsePage/>}/>
 <Route path='/Api'element={<ApiPage/>}/>
 <Route path='/Task1'element={<PracticalPage/>}/>
-
-
-
-
-
-
-
-
-
+<Route path='Hook'element={<CustomPage/>}/>
+<Route path='Revision'element={<RevisionPage/>}/>
+<Route path='/Tasks'element={<TasksPage/>}/>
+<Route path='Practical'element={<PracticalPage/>}/>
+<Route path='Link'element={<LinkPage/>}/>
+<Route path='mini'element={<MiniPage/>}/>
 
 
   </Routes>

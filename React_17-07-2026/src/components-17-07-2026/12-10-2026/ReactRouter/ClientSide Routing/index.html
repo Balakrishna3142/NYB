@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Client-Side Routing</title>
+</head>
+<body>
+  <nav>
+    <a href="/" data-link>Home</a> |
+    <a href="/about" data-link>About</a> |
+    <a href="/contact" data-link>Contact</a>
+  </nav>
+
+  <div id="app"></div>
+
+  <script>
+    function renderPage() {
+      const path = window.location.pathname;
+      const app = document.getElementById("app");
+
+      if (path === "/") {
+        app.innerHTML = "<h2>Home Page</h2>";
+      } else if (path === "/about") {
+        app.innerHTML = "<h2>About Page</h2>";
+      } else if (path === "/contact") {
+        app.innerHTML = "<h2>Contact Page</h2>";
+      } else {
+        app.innerHTML = "<h2>404 - Page Not Found</h2>";
+      }
+    }
+
+    document.addEventListener("click", function(event) {
+      const link = event.target.closest("a[data-link]");
+
+      if (!link) return;
+
+      event.preventDefault();
+
+      history.pushState({}, "", link.href);
+      renderPage();
+    });
+
+    window.addEventListener("popstate", renderPage);
+
+    renderPage();
+  </script>
+</body>
+</html>

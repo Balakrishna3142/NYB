@@ -1,0 +1,58 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app.dark {
+  background: #111827;
+  color: white;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+}
+
+header, section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: white;
+  color: #1e293b;
+}
+
+.dark header,
+.dark section {
+  background: #1f2937;
+  color: white;
+}
+
+input, select {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+li {
+  margin: 15px 0;
+}
+
+.error {
+  color: red;
+}
