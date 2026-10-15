@@ -162,6 +162,18 @@ import RevisionPagr from './pages/Revision/RevisionPage'
 import TasksPage from './pages/Tasks/TasksPage'
 import BrowserRouterPage from './pages/BrowserRouter/BrowserRouterPage'
 import LinkPage from './pages/Link/LinkPage'
+import LimitationsPage from './pages/Limitations of managing/LimitationsPage'
+import InitialPage from './pages/Initial state/InitialPage'
+import CombiningPage from './pages/Combining useReducer/CombiningPage'
+import PropsDrillingPage from './pages/Propsdrilling/PropsDrillingPage'
+import TaskPage from './pages/Tasks1/TaskPage'
+import RerenderPage from './pages/Rerender Behavior/RerenderPage'
+import ReferentialPage from './pages/Referential equality/ReferentialPage'
+import UIPage from './pages/Suspense Fallback UI/UIPage'
+import CodePage from './pages/Code splitting1/CodePage'
+import LargePage from './pages/LargeList Rendering/LargePage'
+import ToolsPage from './pages/React Developer Tools/ToolsPage'
+import PerformancePage from './pages/Performance Mistakes/PerformancePage'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
@@ -406,12 +418,37 @@ const App = () => {
 <Route path='/useState'element={<UsePage/>}/>
 <Route path='/Api'element={<ApiPage/>}/>
 <Route path='/Task1'element={<PracticalPage/>}/>
-<Route path='Hook'element={<CustomPage/>}/>
-<Route path='Revision'element={<RevisionPage/>}/>
+<Route path='/Hook'element={<CustomPage/>}/>
+<Route path='/Revision'element={<RevisionPage/>}/>
 <Route path='/Tasks'element={<TasksPage/>}/>
-<Route path='Practical'element={<PracticalPage/>}/>
-<Route path='Link'element={<LinkPage/>}/>
-<Route path='mini'element={<MiniPage/>}/>
+<Route path='/Practical'element={<PracticalPage/>}/>
+<Route path='/Link'element={<LinkPage/>}/>
+<Route path='/mini'element={<MiniPage/>}/>
+<Route path='/Limit'element={<LimitationsPage/>}/>
+<Route path='/Reduce'element={<ReducerPage/>}/>
+<Route path='/intial'element={<InitialPage/>}/>
+<Route path='/Combinning'element={<CombiningPage/>}/>
+<Route path='/props'element={<PropsDrillingPage/>}/>
+<Route path='/Tasks'element={<TaskPage/>}/>
+<Route path='/mini'element={<MiniPage/>}/>
+
+<Route path='/React'element={<ReactPage/>}/>
+<Route path='/Rerendring'element={<RerenderPage/>}/>
+<Route path='/memo'element={<ReactPage/>}/>
+<Route path='/use'element={<useMemoPage/>}/>
+<Route path='/call'element={<UsePage/>}/>
+<Route path='/Referential'element={<ReferentialPage/>}/>
+<Route path='/unnecessry'element={<unnecessryPage/>}/>
+<Route path='/Lazy'element={<LazyPage/>}/>
+<Route path='/Ui'element={<UIPage/>}/>
+<Route path='/code'element={<CodePage/>}/>
+<Route path='/Large'element={<LargePage/>}/>
+<Route path='/Tool2'element={<ToolsPage/>}/>
+<Route path='/Performance'element={<PerformancePage/>}/>
+<Route path='/Task'element={<TaskPage/>}/>
+<Route path='/mini'element={<MiniPage/>}/>
+
+
 
 
   </Routes>
