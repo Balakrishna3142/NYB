@@ -174,6 +174,11 @@ import CodePage from './pages/Code splitting1/CodePage'
 import LargePage from './pages/LargeList Rendering/LargePage'
 import ToolsPage from './pages/React Developer Tools/ToolsPage'
 import PerformancePage from './pages/Performance Mistakes/PerformancePage'
+import SeparationPage from './pages/Separation/SeparationPage'
+import ControlledForm from './components-17-07-2026/15-10-2026/Controlled and uncontrolled/ControlledForm'
+import DataPage from './pages/Data-fetching hooks/DataPage'
+import EnvironmentPage from './pages/Environment variables/EnvironmentPage'
+import CleanPage from './pages/Clean Code/CleanPage'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
@@ -447,6 +452,97 @@ const App = () => {
 <Route path='/Performance'element={<PerformancePage/>}/>
 <Route path='/Task'element={<TaskPage/>}/>
 <Route path='/mini'element={<MiniPage/>}/>
+
+<Route path='/Separation'element={<SeparationPage/>}/>
+<Route path='/Reusable'element={<ReusablePage/>}/>
+<Route path='/component'element={<ComponentPage/>}/>
+<Route path='/Controlled'element={<ControlledForm/>}/>
+<Route path='/Reusable'element={<ReusablePage/>}/>
+<Route path='/Custoom'element={<CustomPage/>}/>
+<Route path='/Data'element={<DataPage/>}/>
+<Route path='/Api'element={<ApiPage/>}/>
+
+<Route path='/Enviroment'element={<EnvironmentPage/>}/>
+<Route path='/Error'element={<ErrorPage/>}/>
+<Route path='/Clean'element={<CleanPage/>}/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
