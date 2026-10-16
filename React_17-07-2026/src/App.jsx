@@ -179,6 +179,12 @@ import ControlledForm from './components-17-07-2026/15-10-2026/Controlled and un
 import DataPage from './pages/Data-fetching hooks/DataPage'
 import EnvironmentPage from './pages/Environment variables/EnvironmentPage'
 import CleanPage from './pages/Clean Code/CleanPage'
+import VitestPage from './pages/Vitest/VitestPage'
+import TestingPage from './pages/Testing Libary/TestingPage'
+import MockingPage from './pages/Mocking API requests/MockingPage'
+import ProductionPage from './pages/Production build using Vite/ProductionPage'
+import BuildPage from './pages/Build and environment/BuildPage'
+import GitPage from './pages/Git branching/GitPage'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
@@ -465,18 +471,18 @@ const App = () => {
 <Route path='/Enviroment'element={<EnvironmentPage/>}/>
 <Route path='/Error'element={<ErrorPage/>}/>
 <Route path='/Clean'element={<CleanPage/>}/>
-
-
-
-
-
-
-
-
-
-
-
-
+<Route path='/Test'element={<ComponentPage/>}/>
+<Route path='/Vitest'element={<VitestPage/>}/>
+<Route path='/Test1'element={<TestingPage/>}/>
+<Route path='/Rendering'element={<RenderingPage/>}/>
+<Route path='/Testing'element={<TestingPage/>}/>
+<Route path='/validation'element={<TestingPage/>}/>
+<Route path='/conditional'element={<TestingPage/>}/>
+<Route path='/Mocking'element={<MockingPage/>}/>
+<Route path='/Production'element={<ProductionPage/>}/>
+<Route path='/Build'element={<BuildPage/>}/>
+<Route path='/Git'element={<GitPage/>}/>
+<Route path='/Practical'element={<PracticalPage/>}/>
 
 
 
