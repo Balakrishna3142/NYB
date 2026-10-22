@@ -185,6 +185,7 @@ import MockingPage from './pages/Mocking API requests/MockingPage'
 import ProductionPage from './pages/Production build using Vite/ProductionPage'
 import BuildPage from './pages/Build and environment/BuildPage'
 import GitPage from './pages/Git branching/GitPage'
+import Components from './pages/Components/Components'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
@@ -483,20 +484,20 @@ const App = () => {
 <Route path='/Build'element={<BuildPage/>}/>
 <Route path='/Git'element={<GitPage/>}/>
 <Route path='/Practical'element={<PracticalPage/>}/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<Route path='/React'element={<ReactPage/>}/>
+<Route path='/Components'element={<ComponentsPage/>}/>
+<Route path='/Functional'element={<FunctionalPage/>}/>
+<Route path='/Jsx'element={<JsxPage/>}/>
+<Route path='/Fragments'element={<FragmentsPage/>}/>
+<Route path='/Strict'element={<StrictPage/>}/>
+<Route path='/Rendering'element={<RenderingPage/>}/>
+<Route path='/Reusable'element={<ReusablePage/>}/>
+<Route path='/Props'element={<PropsPage/>}/>
+<Route path='/Component'element={<ComponentPage/>}/>
+<Route path='/Event'element={<EventPage/>}/>
+<Route path='/Conditional'element={<ConditionalPage/>}/>
+<Route path='/Task'element={<TaskPage/>}/>
+<Route path='/mini4'element={<MiniPage/>}/>
 
 
 
