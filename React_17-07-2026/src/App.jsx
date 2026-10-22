@@ -498,13 +498,13 @@ const App = () => {
 <Route path='/Conditional'element={<ConditionalPage/>}/>
 <Route path='/Task'element={<TaskPage/>}/>
 <Route path='/mini4'element={<MiniPage/>}/>
-
-
-
-
-
-
-
+<Route path='/use5'element={<UsePage/>}/>
+<Route path='/Api'element={<ApiPage/>}/>
+<Route path='/Context'element={<ContextPage/>}/>
+<Route path='/use'element={<UsePage/>}/>
+<Route path='/Custom'element={<CustomPage/>}/>
+<Route path='/Tasks'element={<TasksPage/>}/>
+<Route path='/mini'element={<MiniPage/>}/>
 
 
 
