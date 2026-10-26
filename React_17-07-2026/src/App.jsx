@@ -186,6 +186,8 @@ import ProductionPage from './pages/Production build using Vite/ProductionPage'
 import BuildPage from './pages/Build and environment/BuildPage'
 import GitPage from './pages/Git branching/GitPage'
 import Components from './pages/Components/Components'
+import AdvancePage from './pages/Advanced React/AdvancePage'
+import OptimizationPage from './pages/Optimization/OptimizationPage'
 //import RenderingPage from './pages/ConditionalRendering-07-08-2026/RenderingPage'//
 //import ToolkitPage from './pages/Redux Toolkit/ToolkitPage'//
 //import ResabilityPage from './pages/Reusability-16-08-2026/ResabilityPage'
@@ -505,10 +507,10 @@ const App = () => {
 <Route path='/Custom'element={<CustomPage/>}/>
 <Route path='/Tasks'element={<TasksPage/>}/>
 <Route path='/mini'element={<MiniPage/>}/>
-
-
-
-
+<Route path='/React'element={<ReactPage/>}/>
+<Route path='/Adavance'element={<AdvancePage/>}/>
+<Route path='/Optimization'element={<OptimizationPage/>}/>
+<Route path='/Task2'element={<TaskPage/>}/>
 
 
 
