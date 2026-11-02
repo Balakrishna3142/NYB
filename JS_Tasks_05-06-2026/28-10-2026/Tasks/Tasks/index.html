@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice Program</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 750px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f4f7fb;
+        }
+
+        section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        input, button {
+            padding: 9px;
+            margin: 5px 2px;
+        }
+
+        button {
+            cursor: pointer;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            background: yellow;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript DOM Practice</h1>
+
+    <section>
+        <h2>1. Dynamic HTML Elements</h2>
+        <input id="itemInput" placeholder="Enter an item">
+        <button id="addBtn">Add Item</button>
+        <ul id="itemList"></ul>
+    </section>
+
+    <section>
+        <h2>2. CSS Classes</h2>
+        <p id="demoText">Click the button to change my style.</p>
+        <button id="styleBtn">Toggle Highlight</button>
+    </section>
+
+    <section>
+        <h2>3. Form Validation</h2>
+        <form id="myForm" novalidate>
+            <input id="username" placeholder="Enter name">
+            <br>
+            <input id="email" placeholder="Enter email">
+            <br>
+            <button type="submit">Submit Form</button>
+        </form>
+        <p id="message" aria-live="polite"></p>
+    </section>
+
+    <section>
+        <h2>4. Tasks, Events and Local Storage</h2>
+        <input id="taskInput" placeholder="Enter a task">
+        <button id="taskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+
+        <button id="showJsonBtn">Show JSON</button>
+        <button id="clearBtn">Clear Tasks</button>
+        <pre id="output"></pre>
+    </section>
+
+    <section>
+        <h2>5. Browser Timers</h2>
+        <p>Counter: <span id="counter">0</span></p>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+        <p id="clock"></p>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>

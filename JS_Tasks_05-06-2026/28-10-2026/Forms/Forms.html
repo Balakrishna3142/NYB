@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 30px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        #message {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<form id="myForm" novalidate>
+    <h2>Registration Form</h2>
+
+    <label for="name">Name *</label>
+    <input type="text" id="name" required>
+    <div class="error" id="nameError"></div>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" required>
+    <div class="error" id="emailError"></div>
+
+    <label for="password">Password *</label>
+    <input type="password" id="password" required>
+    <div class="error" id="passwordError"></div>
+
+    <label for="confirm">Confirm Password *</label>
+    <input type="password" id="confirm" required>
+    <div class="error" id="confirmError"></div>
+
+    <label for="role">Select Role *</label>
+    <select id="role" required>
+        <option value="">Select role</option>
+        <option value="student">Student</option>
+        <option value="employee">Employee</option>
+    </select>
+    <div class="error" id="roleError"></div>
+
+    <div id="extraField"></div>
+
+    <label>
+        <input type="checkbox" id="terms">
+        I agree to the terms *
+    </label>
+    <div class="error" id="termsError"></div>
+
+    <button type="submit">Submit</button>
+
+    <p id="message"></p>
+</form>
+
+<script>
+    const form = document.getElementById("myForm");
+    const role = document.getElementById("role");
+    const extraField = document.getElementById("extraField");
+
+    // Dynamic form updates
+    role.addEventListener("change", function () {
+        if (role.value === "student") {
+            extraField.innerHTML = `
+                <label for="extra">College Name *</label>
+                <input type="text" id="extra" required>
+                <div class="error" id="extraError"></div>
+            `;
+        } else if (role.value === "employee") {
+            extraField.innerHTML = `
+                <label for="extra">Company Name *</label>
+                <input type="text" id="extra" required>
+                <div class="error" id="extraError"></div>
+            `;
+        } else {
+            extraField.innerHTML = "";
+        }
+    });
+
+    // Form submission
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let valid = true;
+        const message = document.getElementById("message");
+
+        // Clear previous errors
+        document.querySelectorAll(".error").forEach(function (element) {
+            element.textContent = "";
+        });
+
+        message.textContent = "";
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email");
+        const password = document.getElementById("password").value;
+        const confirm = document.getElementById("confirm").value;
+        const terms = document.getElementById("terms").checked;
+
+        // Required fields and custom validation
+        if (name === "") {
+            document.getElementById("nameError").textContent =
+                "Name is required.";
+            valid = false;
+        } else if (name.length < 2) {
+            document.getElementById("nameError").textContent =
+                "Name must contain at least 2 characters.";
+            valid = false;
+        }
+
+        if (email.value.trim() === "") {
+            document.getElementById("emailError").textContent =
+                "Email is required.";
+            valid = false;
+        } else if (!email.checkValidity()) {
+            document.getElementById("emailError").textContent =
+                "Enter a valid email address.";
+            valid = false;
+        }
+
+        if (password === "") {
+            document.getElementById("passwordError").textContent =
+                "Password is required.";
+            valid = false;
+        } else if (password.length < 8 || !/[0-9]/.test(password)) {
+            document.getElementById("passwordError").textContent =
+                "Password needs 8 characters and at least one number.";
+            valid = false;
+        }
+
+        if (confirm === "") {
+            document.getElementById("confirmError").textContent =
+                "Please confirm your password.";
+            valid = false;
+        } else if (password !== confirm) {
+            document.getElementById("confirmError").textContent =
+                "Passwords do not match.";
+            valid = false;
+        }
+
+        if (role.value === "") {
+            document.getElementById("roleError").textContent =
+                "Please select a role.";
+            valid = false;
+        }
+
+        // Validate dynamically added field
+        const extra = document.getElementById("extra");
+        if (extra && extra.value.trim() === "") {
+            document.getElementById("extraError").textContent =
+                "This field is required.";
+            valid = false;
+        }
+
+        if (!terms) {
+            document.getElementById("termsError").textContent =
+                "You must agree to the terms.";
+            valid = false;
+        }
+
+        // Display result
+        if (valid) {
+            message.style.color = "green";
+            message.textContent = "Form submitted successfully!";
+            form.reset();
+            extraField.innerHTML = "";
+        } else {
+            message.style.color = "red";
+            message.textContent = "Please correct the errors above.";
+        }
+    });
+</script>
+<script src="./Forms.js"></script>
+</body>
+</html>

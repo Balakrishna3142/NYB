@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Browser Objects</title>
+</head>
+<body>
+    <h1>JavaScript Browser Objects</h1>
+
+    <h2>1. Window</h2>
+    <button onclick="showWindow()">Show Window Info</button>
+
+    <h2>2. Document</h2>
+    <p id="message">Hello, JavaScript!</p>
+    <button onclick="changeDocument()">Change Text</button>
+
+    <h2>3. Location</h2>
+    <button onclick="showLocation()">Show URL</button>
+    <button onclick="reloadPage()">Reload Page</button>
+
+    <h2>4. History</h2>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+
+    <h2>5. setTimeout()</h2>
+    <button onclick="startTimeout()">Run After 3 Seconds</button>
+
+    <h2>6. setInterval()</h2>
+    <p>Counter: <span id="counter">0</span></p>
+    <button onclick="startInterval()">Start Counter</button>
+    <button onclick="stopInterval()">Stop Counter</button>
+
+    <h2>Output</h2>
+    <pre id="output">Click a button to see the result.</pre>
+
+    <script src="./Browser.js"></script>
+</body>
+</html>

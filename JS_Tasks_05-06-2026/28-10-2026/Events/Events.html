@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Event Handling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+            background: #f0f4f8;
+        }
+
+        section {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        button, input, select {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        #box {
+            padding: 20px;
+            background: lightblue;
+            cursor: pointer;
+        }
+
+        #parent {
+            padding: 20px;
+            background: lightyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Event Handling Examples</h1>
+
+    <section>
+        <h3>1. Click Event</h3>
+        <button id="btn">Click Me</button>
+    </section>
+
+    <section>
+        <h3>2. Input Event</h3>
+        <input id="inputBox" placeholder="Type something">
+        <p id="preview"></p>
+    </section>
+
+    <section>
+        <h3>3. Change Event</h3>
+        <select id="color">
+            <option value="">Select Color</option>
+            <option value="lightblue">Blue</option>
+            <option value="lightgreen">Green</option>
+            <option value="pink">Pink</option>
+        </select>
+    </section>
+
+    <section>
+        <h3>4. Submit Event</h3>
+        <form id="myForm">
+            <input id="name" placeholder="Enter name" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>5. Keyboard Event</h3>
+        <input id="keyBox" placeholder="Press any key">
+    </section>
+
+    <section>
+        <h3>6. Mouse Event</h3>
+        <div id="box">Move or click the mouse here</div>
+    </section>
+
+    <section>
+        <h3>7. Event Object</h3>
+        <button id="eventBtn">Show Event Object</button>
+    </section>
+
+    <section>
+        <h3>8. Event Bubbling</h3>
+        <div id="parent">
+            Parent
+            <button id="child">Child</button>
+        </div>
+    </section>
+
+    <section>
+        <h3>9. Event Capturing</h3>
+        <div id="captureParent">
+            Parent
+            <button id="captureChild">Child</button>
+        </div>
+    </section>
+
+    <section>
+        <h3>10. Event Delegation</h3>
+        <ul id="list">
+            <li><button>Apple</button></li>
+            <li><button>Banana</button></li>
+            <li><button>Mango</button></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>11. preventDefault()</h3>
+        <a id="link" href="https://example.com">Click Link</a>
+    </section>
+
+    <section>
+        <h3>12. stopPropagation()</h3>
+        <div id="stopParent" style="background: lightcoral; padding: 20px;">
+            Parent Area
+            <button id="stopChild">Click Child</button>
+        </div>
+    </section>
+
+    <script>
+        // 1. Click Event
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Button clicked!");
+        });
+
+        // 2. Input Event
+        document.getElementById("inputBox").addEventListener("input", function (e) {
+            document.getElementById("preview").textContent = e.target.value;
+        });
+
+        // 3. Change Event
+        document.getElementById("color").addEventListener("change", function (e) {
+            document.body.style.backgroundColor = e.target.value || "#f0f4f8";
+        });
+
+        // 4. Submit Event
+        document.getElementById("myForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Hello, " + document.getElementById("name").value);
+        });
+
+        // 5. Keyboard Event
+        document.getElementById("keyBox").addEventListener("keydown", function (e) {
+            console.log("Key pressed:", e.key);
+        });
+
+        // 6. Mouse Events
+        const box = document.getElementById("box");
+
+        box.addEventListener("mouseover", function () {
+            box.textContent = "Mouse entered!";
+        });
+
+        box.addEventListener("mouseout", function () {
+            box.textContent = "Mouse left!";
+        });
+
+        box.addEventListener("click", function () {
+            alert("Mouse clicked!");
+        });
+
+        // 7. Event Object
+        document.getElementById("eventBtn").addEventListener("click", function (e) {
+            console.log("Event type:", e.type);
+            console.log("Event target:", e.target);
+            alert("Event type: " + e.type);
+        });
+
+        // 8. Event Bubbling
+        document.getElementById("parent").addEventListener("click", function () {
+            console.log("Parent clicked (bubbling)");
+        });
+
+        document.getElementById("child").addEventListener("click", function () {
+            console.log("Child clicked (bubbling)");
+        });
+
+        // 9. Event Capturing
+        document.getElementById("captureParent").addEventListener("click", function () {
+            console.log("Parent capturing");
+        }, true);
+
+        document.getElementById("captureChild").addEventListener("click", function () {
+            console.log("Child clicked");
+        });
+
+        // 10. Event Delegation
+        document.getElementById("list").addEventListener("click", function (e) {
+            if (e.target.matches("button")) {
+                alert("You selected " + e.target.textContent);
+            }
+        });
+
+        // 11. preventDefault()
+        document.getElementById("link").addEventListener("click", function (e) {
+            e.preventDefault();
+            alert("Default link action prevented!");
+        });
+
+        // 12. stopPropagation()
+        document.getElementById("stopParent").addEventListener("click", function () {
+            console.log("Parent clicked");
+        });
+
+        document.getElementById("stopChild").addEventListener("click", function (e) {
+            e.stopPropagation();
+            alert("Child clicked; parent event stopped!");
+        });
+    </script>
+
+</body>
+</html>

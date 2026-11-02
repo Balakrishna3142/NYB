@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f4f8;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .highlight {
+            color: blue;
+            background-color: yellow;
+        }
+
+        button, input {
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1 id="heading">Introduction to DOM</h1>
+
+        <p class="message">First paragraph</p>
+        <p class="message">Second paragraph</p>
+
+        <input type="text" id="userInput"
+               placeholder="Enter your name">
+
+        <br>
+
+        <button onclick="selectById()">getElementById</button>
+        <button onclick="selectOne()">querySelector</button>
+        <button onclick="selectAll()">querySelectorAll</button>
+        <button onclick="updateText()">textContent</button>
+        <button onclick="updateHTML()">innerHTML</button>
+        <button onclick="changeClass()">classList</button>
+        <button onclick="changeStyle()">Inline Style</button>
+        <button onclick="changeAttribute()">Attributes</button>
+        <button onclick="addElement()">Add Element</button>
+        <button onclick="removeElement()">Remove Element</button>
+        <button onclick="dynamicUpdate()">Dynamic UI Update</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script>
+        //  DOM Tree
+        // HTML elements are represented as nodes in the DOM tree.
+
+        //  getElementById()
+        function selectById() {
+            const heading = document.getElementById("heading");
+            heading.textContent = "Selected using getElementById()";
+        }
+
+        //  querySelector()
+        function selectOne() {
+            const paragraph = document.querySelector(".message");
+            paragraph.textContent = "First matching paragraph selected!";
+        }
+
+        //  querySelectorAll()
+        function selectAll() {
+            const paragraphs = document.querySelectorAll(".message");
+
+            paragraphs.forEach(function (p) {
+                p.style.color = "red";
+            });
+        }
+
+        //  textContent
+        function updateText() {
+            document.getElementById("output").textContent =
+                "This content was updated using textContent.";
+        }
+
+        //  innerHTML
+        function updateHTML() {
+            document.getElementById("output").innerHTML =
+                "<strong>HTML content updated successfully!</strong>";
+        }
+
+        // 7. classList
+        function changeClass() {
+            document.getElementById("heading")
+                .classList.toggle("highlight");
+        }
+
+        // 8. Inline Styles
+        function changeStyle() {
+            const heading = document.getElementById("heading");
+            heading.style.fontSize = "30px";
+            heading.style.color = "green";
+        }
+
+        // 9. Attributes
+        function changeAttribute() {
+            const heading = document.getElementById("heading");
+            heading.setAttribute("title", "DOM Heading");
+            alert(heading.getAttribute("title"));
+        }
+
+        // 10. Creating and Adding Elements
+        function addElement() {
+            const input = document.getElementById("userInput");
+            const name = input.value.trim();
+
+            if (name === "") {
+                alert("Please enter your name!");
+                return;
+            }
+
+            const newElement = document.createElement("p");
+            newElement.textContent = "Hello, " + name + "!";
+
+            document.getElementById("output")
+                .appendChild(newElement);
+
+            input.value = "";
+        }
+
+        // 11. Removing Elements
+        function removeElement() {
+            const output = document.getElementById("output");
+
+            if (output.lastElementChild) {
+                output.lastElementChild.remove();
+            } else {
+                alert("No elements to remove!");
+            }
+        }
+
+        // 12. Dynamic UI Updates
+        function dynamicUpdate() {
+            const output = document.getElementById("output");
+            const paragraph = document.createElement("p");
+
+            paragraph.textContent =
+                "The UI was updated dynamically without reloading the page!";
+
+            output.appendChild(paragraph);
+        }
+    </script>
+
+</body>
+</html>
