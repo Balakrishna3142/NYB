@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Promise Examples</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 8px;
+            border: none;
+            background: blue;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkblue;
+        }
+
+        #status {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #output {
+            background: white;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 8px;
+            min-height: 100px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Promise Methods</h1>
+
+    <p>Click the buttons to understand Promise methods.</p>
+
+    <button onclick="runAll()">
+        Promise.all()
+    </button>
+
+    <button onclick="runAllSettled()">
+        Promise.allSettled()
+    </button>
+
+    <button onclick="runRace()">
+        Promise.race()
+    </button>
+
+    <button onclick="runAny()">
+        Promise.any()
+    </button>
+
+    <h3>Status:</h3>
+
+    <p id="status">Ready</p>
+
+    <h3>Output:</h3>
+
+    <div id="output">
+        Results will appear here...
+    </div>
+
+    <script src="./Promise.js"></script>
+
+</body>
+</html>

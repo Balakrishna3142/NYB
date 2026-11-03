@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Loop Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            padding: 25px;
+            line-height: 1.6;
+        }
+
+        h1 { color: #1e40af; }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        pre {
+            background: #111827;
+            color: #a7f3d0;
+            padding: 15px;
+            overflow-x: auto;
+        }
+
+        #output {
+            background: #111827;
+            color: #22c55e;
+            padding: 20px;
+            min-height: 100px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript Execution and Event Loop</h1>
+
+<div class="box">
+    <h2>1. Synchronous JavaScript</h2>
+    <p>Code executes line by line. Each statement waits for the previous one.</p>
+
+    <pre>
+console.log("First");
+console.log("Second");
+console.log("Third");
+    </pre>
+
+    <button onclick="syncExample()">Run Example</button>
+</div>
+
+<div class="box">
+    <h2>2. Asynchronous JavaScript</h2>
+    <p>Some operations finish later without blocking the remaining code.</p>
+
+    <pre>
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Hello after 2 seconds");
+}, 2000);
+
+console.log("End");
+    </pre>
+
+    <button onclick="asyncExample()">Run Example</button>
+</div>
+
+<div class="box">
+    <h2>3. Call Stack</h2>
+    <p>The call stack manages function execution. It follows LIFO (Last In, First Out).</p>
+
+    <pre>
+function first() {
+    second();
+}
+
+function second() {
+    third();
+}
+
+function third() {
+    console.log("Third function");
+}
+
+first();
+    </pre>
+
+    <button onclick="stackExample()">Run Example</button>
+</div>
+
+<div class="box">
+    <h2>4. Web APIs</h2>
+    <p>Browser features such as setTimeout, DOM events and fetch are Web APIs.</p>
+
+    <button onclick="webApiExample()">Run Timer</button>
+</div>
+
+<div class="box">
+    <h2>5. Callback Functions</h2>
+    <p>A callback is a function passed as an argument to another function.</p>
+
+    <pre>
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function message() {
+    console.log("Welcome!");
+}
+
+greet("John", message);
+    </pre>
+
+    <button onclick="callbackExample()">Run Example</button>
+</div>
+
+<div class="box">
+    <h2>6. Callback Queue and Event Loop</h2>
+    <p>The event loop moves queued callbacks to the call stack when it is empty.</p>
+
+    <pre>
+console.log("A");
+
+setTimeout(() => {
+    console.log("B");
+}, 0);
+
+console.log("C");
+    </pre>
+
+    <button onclick="eventLoopExample()">Run Example</button>
+</div>
+
+<div class="box">
+    <h2>7. Callback Problems (Callback Hell)</h2>
+
+    <p>Nested callbacks become difficult to read and maintain.</p>
+
+    <pre>
+setTimeout(() => {
+    console.log("Step 1");
+
+    setTimeout(() => {
+        console.log("Step 2");
+
+        setTimeout(() => {
+            console.log("Step 3");
+        }, 1000);
+
+    }, 1000);
+
+}, 1000);
+    </pre>
+
+    <button onclick="callbackHellExample()">Run Example</button>
+</div>
+
+<div class="box">
+    <h2>Output Console</h2>
+    <div id="output">Click any Run Example button...</div>
+    <button onclick="clearOutput()">Clear Output</button>
+</div>
+
+<script src="./Asynchronous.js"></script>
+
+</body>
+</html>

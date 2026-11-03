@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Promises</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+            background: #f2f2f2;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        button {
+            padding: 12px;
+            margin: 5px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #output {
+            background: black;
+            color: lightgreen;
+            padding: 20px;
+            margin-top: 20px;
+            min-height: 150px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Promise Examples</h1>
+
+    <button onclick="pendingPromise()">Pending</button>
+
+    <button onclick="fulfilledPromise()">Fulfilled</button>
+
+    <button onclick="rejectedPromise()">Rejected</button>
+
+    <button onclick="thenExample()">Then()</button>
+
+    <button onclick="catchExample()">Catch()</button>
+
+    <button onclick="finallyExample()">Finally()</button>
+
+    <button onclick="chainingExample()">Promise Chaining</button>
+
+    <button onclick="clearOutput()">Clear</button>
+
+    <h2>Output:</h2>
+
+    <div id="output">Click any button to see the result...</div>
+
+    <script>
+
+        const output = document.getElementById("output");
+
+        function show(message) {
+            output.innerHTML += message + "<br>";
+        }
+
+        function clearOutput() {
+            output.innerHTML = "";
+        }
+
+        // 1. PENDING PROMISE
+
+        function pendingPromise() {
+
+            clearOutput();
+
+            show("Promise is Pending...");
+
+            const promise = new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+                    resolve("Promise Completed!");
+                }, 3000);
+
+            });
+
+            promise.then((result) => {
+                show(result);
+            });
+        }
+
+
+        // 2. FULFILLED PROMISE
+
+        function fulfilledPromise() {
+
+            clearOutput();
+
+            const promise = new Promise((resolve, reject) => {
+
+                resolve("Promise Fulfilled Successfully!");
+
+            });
+
+            promise.then((result) => {
+                show(result);
+            });
+        }
+
+
+        // 3. REJECTED PROMISE
+
+        function rejectedPromise() {
+
+            clearOutput();
+
+            const promise = new Promise((resolve, reject) => {
+
+                reject("Something Went Wrong!");
+
+            });
+
+            promise.catch((error) => {
+                show("Rejected: " + error);
+            });
+        }
+
+
+        // 4. THEN METHOD
+
+        function thenExample() {
+
+            clearOutput();
+
+            Promise.resolve("Hello JavaScript!")
+
+            .then((result) => {
+                show(result);
+            });
+
+        }
+
+
+        // 5. CATCH METHOD
+
+        function catchExample() {
+
+            clearOutput();
+
+            Promise.reject("Network Error!")
+
+            .catch((error) => {
+                show("Error: " + error);
+            });
+
+        }
+
+
+        // 6. FINALLY METHOD
+
+        function finallyExample() {
+
+            clearOutput();
+
+            Promise.resolve("Task Successful!")
+
+            .then((result) => {
+                show(result);
+            })
+
+            .catch((error) => {
+                show(error);
+            })
+
+            .finally(() => {
+                show("Finally: Promise Execution Finished!");
+            });
+
+        }
+
+
+        // 7. PROMISE CHAINING
+
+        function chainingExample() {
+
+            clearOutput();
+
+            Promise.resolve(10)
+
+            .then((number) => {
+
+                show("First Value: " + number);
+
+                return number * 2;
+
+            })
+
+            .then((number) => {
+
+                show("Second Value: " + number);
+
+                return number + 5;
+
+            })
+
+            .then((number) => {
+
+                show("Final Value: " + number);
+
+            })
+
+            .catch((error) => {
+
+                show("Error: " + error);
+
+            });
+
+        }
+
+    </script>
+    <script src="./Promises.js"></script>
+
+</body>
+</html>
